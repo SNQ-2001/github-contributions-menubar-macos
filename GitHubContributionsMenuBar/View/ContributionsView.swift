@@ -11,8 +11,6 @@ import SkeletonUI
 public struct ContributionsView: View {
     @Environment(\.redactionReasons) var redactionReasons
 
-    let rowsCount: Int
-    let columnsCount: Int
     let colors: [[Color]]
     let topLeadingText: String?
     let topTrailingText: String?
@@ -61,7 +59,7 @@ public struct ContributionsView: View {
                 IndicatorView()
                 Spacer()
             } else {
-                GridStack(rows: rowsCount, columns: columnsCount, spacing: tileSpacing) { row, column in
+                GridStack(rows: 7, columns: 20, spacing: tileSpacing) { row, column in
                     if let color = colors.element(at: row)?.element(at: column) {
                         color.tileStyle()
                     } else {
@@ -72,9 +70,7 @@ public struct ContributionsView: View {
         }
     }
 
-    public init(rowsCount: Int, columnsCount: Int, colors: [[Color]], topLeadingText: String? = nil, topTrailingText: String? = nil) {
-        self.rowsCount = rowsCount
-        self.columnsCount = columnsCount
+    public init(colors: [[Color]], topLeadingText: String? = nil, topTrailingText: String? = nil) {
         self.colors = colors
         self.topLeadingText = topLeadingText
         self.topTrailingText = topTrailingText

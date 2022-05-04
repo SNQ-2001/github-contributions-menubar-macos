@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import AppKit
 
 struct IndicatorView: NSViewRepresentable {
     func makeNSView(context: Context) -> NSProgressIndicator {

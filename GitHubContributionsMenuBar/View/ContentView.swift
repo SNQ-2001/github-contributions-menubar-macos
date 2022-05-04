@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var username: String = "SNQ-2001"
-    @State var setting: Bool = false
+    @ObservedObject var viewModel = ContributionsViewModel(username: "SNQ-2001")
     var body: some View {
-        Contributions(viewModel: .init(), username: $username)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        Contributions(viewModel: viewModel)
     }
 }

@@ -15,12 +15,14 @@ final class ContributionsViewModel: ObservableObject {
         var count: Int = .zero
     }
 
-    static let rowsCount = 7
-    static let columnsCount = 20
-
+    let username: String
     @Published private(set) var contributions: Contributions = .init()
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
+
+    init(username: String) {
+        self.username = username
+    }
 
     func getContributions(username: String) {
         guard contributions.levels.isEmpty else { return }
@@ -35,8 +37,8 @@ final class ContributionsViewModel: ObservableObject {
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {
         guard let lastDate = contributions.last?.date else { return .init() }
-        let tilesCount = rowsCount * columnsCount - (rowsCount - Calendar.current.component(.weekday, from: lastDate))
-        let levels = contributions.suffix(tilesCount).map(\.level).chunked(into: rowsCount)
+        let tilesCount = 7 * 20 - (7 - Calendar.current.component(.weekday, from: lastDate))
+        let levels = contributions.suffix(tilesCount).map(\.level).chunked(into: 7)
         let count = contributions.reduce(0) { $0 + $1.count }
         return Contributions(levels: levels, count: count)
     }

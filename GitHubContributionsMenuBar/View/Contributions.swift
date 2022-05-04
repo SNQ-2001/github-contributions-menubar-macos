@@ -9,21 +9,18 @@ import SwiftUI
 
 struct Contributions: View {
     @ObservedObject var viewModel: ContributionsViewModel
-    @Binding var username: String
     var body: some View {
         ContributionsView(
-            rowsCount: ContributionsViewModel.rowsCount,
-            columnsCount: ContributionsViewModel.columnsCount,
             colors: viewModel.contributions.levels.map { $0.map(\.color) },
-            topLeadingText: username,
+            topLeadingText: viewModel.username,
             topTrailingText: createContributionsCount(count: viewModel.contributions.count)
         )
-        .frame(width: 265, height: 114)
+        .frame(width: 265, height: 115)
         .padding(.all, 12)
         .onAppear(perform: getContributions)
     }
     private func getContributions() {
-        viewModel.getContributions(username: username)
+        viewModel.getContributions(username: viewModel.username)
     }
     private func createContributionsCount(count: Int) -> String {
         return count <= 1 ? "\(count) contribution" : "\(count) contributions"
