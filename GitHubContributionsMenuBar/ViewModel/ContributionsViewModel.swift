@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SwiftUI
 
 final class ContributionsViewModel: ObservableObject {
 
@@ -15,24 +16,38 @@ final class ContributionsViewModel: ObservableObject {
         var count: Int = .zero
     }
 
-    let username: String
-    @Published private(set) var contributions: Contributions = .init()
+    @Published var contributions: Contributions = .init()
+    @Published var username: String = ""
+    @Published var thema: Int = 0
+    @Published var viewMode: Bool = false
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 
-    init(username: String) {
-        self.username = username
-    }
-
-    func getContributions(username: String) {
+    func getContributions() {
         guard contributions.levels.isEmpty else { return }
-
         GitHub.getContributions(for: username, queue: queue)
             .subscribe(on: queue)
             .replaceError(with: [])
             .map(Self.mapContributions)
             .receive(on: DispatchQueue.main)
             .assign(to: &$contributions)
+    }
+
+    func updateContributions() {
+        self.contributions = .init()
+        self.username = UserDefaults.standard.string(forKey: "username") ?? ""
+        self.thema = UserDefaults.standard.integer(forKey: "thema")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.getContributions()
+        }
+    }
+
+    func setUsename() {
+        UserDefaults.standard.set(self.username, forKey: "username")
+    }
+
+    func setThema() {
+        UserDefaults.standard.set(self.thema, forKey: "thema")
     }
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {

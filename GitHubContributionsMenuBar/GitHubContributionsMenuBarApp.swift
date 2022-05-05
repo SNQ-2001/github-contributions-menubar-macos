@@ -12,12 +12,13 @@ struct GitHubContributionsMenuBarApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         Settings {
-            ContentView()
+            ContentView(viewModel: .init())
         }
     }
 }
 
 class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
+    @ObservedObject var viewModel = ContributionsViewModel()
     @Published var statusItem: NSStatusItem?
     @Published var popover = NSPopover()
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -28,7 +29,7 @@ class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
         popover.behavior = .transient
 
         popover.contentViewController = NSViewController()
-        popover.contentViewController?.view = NSHostingView(rootView: ContentView())
+        popover.contentViewController?.view = NSHostingView(rootView: ContentView(viewModel: viewModel))
 
         popover.contentViewController?.view.window?.makeKey()
 
@@ -43,6 +44,7 @@ class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
             popover.performClose(sender)
         } else {
             if let menuButton = statusItem?.button {
+                viewModel.updateContributions()
                 popover.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: .minY)
             }
         }
