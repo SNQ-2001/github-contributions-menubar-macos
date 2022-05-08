@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Lottie
 import Foundation
 
 struct UXView: View {
