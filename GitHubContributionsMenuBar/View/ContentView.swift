@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = ContributionsViewModel(username: "SNQ-2001")
+    @ObservedObject var viewModel: ContributionsViewModel
     var body: some View {
-        Contributions(viewModel: viewModel)
+        ContributionsView(viewModel: viewModel)
+            .frame(width: 265, height: 115)
+            .padding(.all, 12)
+            .onChange(of: viewModel.viewMode) { newValue in
+                viewModel.updateContributions()
+            }
     }
 }

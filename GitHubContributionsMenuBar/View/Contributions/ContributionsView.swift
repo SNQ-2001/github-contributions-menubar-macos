@@ -66,9 +66,7 @@ public struct ContributionsView: View {
                 SettingsView(viewModel: viewModel)
             } else {
                 if color().isEmpty {
-                    Spacer()
-                    IndicatorView()
-                    Spacer()
+                    UXView(viewModel: viewModel)
                 } else {
                     GridStack(rows: 7, columns: 20, spacing: 3.0) { row, column in
                         if let color = color().element(at: row)?.element(at: column) {
