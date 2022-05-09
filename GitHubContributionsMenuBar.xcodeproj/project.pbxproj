@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C66948E2822EA3800ABFED2 /* GitHubContributionsMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubContributionsMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C66948E2822EA3800ABFED2 /* Contributions Graphs in Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contributions Graphs in Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubContributionsMenuBarApp.swift; sourceTree = "<group>"; };
 		1C6694952822EA3A00ABFED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		1C66948F2822EA3800ABFED2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C66948E2822EA3800ABFED2 /* GitHubContributionsMenuBar.app */,
+				1C66948E2822EA3800ABFED2 /* Contributions Graphs in Menu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				1C6694BF2822ECE100ABFED2 /* SkeletonUI */,
 			);
 			productName = GitHubContributionsMenuBar;
-			productReference = 1C66948E2822EA3800ABFED2 /* GitHubContributionsMenuBar.app */;
+			productReference = 1C66948E2822EA3800ABFED2 /* Contributions Graphs in Menu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -391,7 +391,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -406,7 +406,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Contributions Graphs in Menu";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -421,7 +421,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -436,7 +436,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Contributions Graphs in Menu";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
