@@ -11,11 +11,10 @@ import SwiftUI
 struct GitHubContributionsMenuBarApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
-        Settings {
-            ContentView(viewModel: .init())
-        }
+        Settings {}
     }
 }
+
 
 class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
     @ObservedObject var viewModel = ContributionsViewModel()
@@ -45,6 +44,7 @@ class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
         } else {
             if let menuButton = statusItem?.button {
                 viewModel.updateContributions()
+                NSApp.activate(ignoringOtherApps: true)
                 popover.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: .minY)
             }
         }
