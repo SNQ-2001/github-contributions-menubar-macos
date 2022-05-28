@@ -16,37 +16,76 @@ struct GitHubContributionsMenuBarApp: App {
 }
 
 
-class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate {
     @ObservedObject var viewModel = ContributionsViewModel()
-    @Published var statusItem: NSStatusItem?
-    @Published var popover = NSPopover()
+    var statusBarItem: NSStatusItem!
+    var popover = NSPopover()
     func applicationDidFinishLaunching(_ notification: Notification) {
         setUpMenu()
     }
     func setUpMenu() {
-        popover.animates = true
+        // 旧
+//        popover.animates = true
+//        popover.behavior = .transient
+//
+//        popover.contentViewController = NSViewController()
+//        popover.contentViewController?.view = NSHostingView(rootView: ContentView(viewModel: viewModel))
+//
+//        popover.contentViewController?.view.window?.makeKey()
+//
+//        statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+//
+//        guard let button = self.statusBarItem.button else { return }
+//        button.image = NSImage(named: NSImage.Name("menubar"))
+//        button.action = #selector(menuButtonAction(sender:))
+
+        // 新
         popover.behavior = .transient
+        popover.contentViewController = NSHostingController(rootView: ContentView(viewModel: viewModel))
+        self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
+        guard let button = self.statusBarItem.button else { return }
+        button.image = NSImage(named: NSImage.Name("menubar"))
+        button.action = #selector(menuButtonAction(sender:))
+        // 右クリック
+        button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+    }
 
-        popover.contentViewController = NSViewController()
-        popover.contentViewController?.view = NSHostingView(rootView: ContentView(viewModel: viewModel))
+    @objc func menuButtonAction(sender: AnyObject) {
+        // 右クリック
+        rightClick()
+        // 左クリック
+        leftClick(sender: sender)
+    }
 
-        popover.contentViewController?.view.window?.makeKey()
-
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        if let menuButton = statusItem?.button {
-            menuButton.image = NSImage(named: NSImage.Name("menubar"))
-            menuButton.action = #selector(menuButtonAction(sender:))
+    func rightClick() {
+        guard let event = NSApp.currentEvent else { return }
+        if event.type == NSEvent.EventType.rightMouseUp {
+            let menu = NSMenu()
+            menu.addItem(
+                withTitle: NSLocalizedString("Quit", comment: "Quit app"),
+                action: #selector(quit),
+                keyEquivalent: ""
+            )
+            statusBarItem.menu = menu
+            statusBarItem.button?.performClick(nil)
+            statusBarItem.menu = nil
+            return
         }
     }
-    @objc func menuButtonAction(sender: AnyObject) {
-        if popover.isShown {
-            popover.performClose(sender)
+
+    func leftClick(sender: AnyObject) {
+        guard let button = self.statusBarItem.button else { return }
+        if self.popover.isShown {
+            self.popover.performClose(sender)
         } else {
-            if let menuButton = statusItem?.button {
-                viewModel.updateContributions()
-                NSApp.activate(ignoringOtherApps: true)
-                popover.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: .minY)
-            }
+            viewModel.updateContributions()
+//            NSApp.activate(ignoringOtherApps: true) // 2回目以降閉じなくなる
+            self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            self.popover.contentViewController?.view.window?.makeKey()
         }
+    }
+
+    @objc func quit() {
+        NSApp.terminate(self)
     }
 }
