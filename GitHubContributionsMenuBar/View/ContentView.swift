@@ -12,7 +12,6 @@ struct ContentView: View {
     var body: some View {
         ContributionsView(viewModel: viewModel)
             .frame(width: 265, height: 115)
-//            .frame(width: 265, height: 130)
             .padding(.all, 12)
             .onChange(of: viewModel.viewMode) { newValue in
                 viewModel.updateContributions()
