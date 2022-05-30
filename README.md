@@ -1,6 +1,6 @@
 This project was created in reference to the [GitHub Contribution Graphs for iOS](https://github.com/SNQ-2001/github-contributions-ios) project.
 
-<img align="right" src=".assets/app-icon-rounded.png" width="40" alt="Contribution Graphs for GitHub">
+<img align="right" src=".assets/app-icon-rounded.png" width="50" alt="Contribution Graphs for GitHub">
 
 # GitHub Contribution Graphs for macOS
 
