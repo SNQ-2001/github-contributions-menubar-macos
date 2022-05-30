@@ -1,6 +1,6 @@
 This project was created in reference to the [GitHub Contribution Graphs for iOS](https://github.com/SNQ-2001/github-contributions-ios) project.
 
-<img align="right" src=".assets/app-icon-rounded.png" width="70" alt="Contribution Graphs for GitHub">
+<img align="right" src=".assets/app-icon-rounded.png" width="40" alt="Contribution Graphs for GitHub">
 
 # GitHub Contribution Graphs for macOS
 
@@ -14,8 +14,6 @@ Quickly check in on your GitHub contributions from your Menu Bar!
 ## Screenshots
 
 <img src=".assets/app-screenshot-1.png" width="60%" alt="App Screenshot 1">
-<!-- <img src=".assets/app-screenshot-1.png" width="250" alt="App Screenshot 1"> <img src=".assets/app-screenshot-2.png" width="250" alt="App Screenshot 2"> -->
-
 
 ## Requirements
 
