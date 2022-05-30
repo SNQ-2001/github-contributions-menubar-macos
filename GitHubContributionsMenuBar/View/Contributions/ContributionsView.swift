@@ -11,6 +11,7 @@ import SkeletonUI
 public struct ContributionsView: View {
     @ObservedObject var viewModel: ContributionsViewModel
     @State var hover: Bool = false
+    @State var hover1: Bool = false
     @Environment(\.colorScheme) var colorScheme
     public var body: some View {
         VStack {
@@ -18,7 +19,7 @@ public struct ContributionsView: View {
                 HStack(spacing: 6) {
                     createImage()
                         .resizable()
-                        .frame(width: 10, height: 10)
+                        .frame(width: viewModel.viewMode ? 10 : 10, height: viewModel.viewMode ? 10 : 10)
                         .unredacted()
                         .background(
                             Color(
@@ -50,16 +51,39 @@ public struct ContributionsView: View {
                         .frame(height: 12)
                 }
                 Spacer()
-                Text(createContributionsCount(count: viewModel.contributions.count))
-                    .skeleton(with: skeletonFlag())
-                    .shape(type: .rounded(.radius(5, style: .continuous)))
-                    .appearance(type: .solid(
-                        color: .white.opacity(0.1),
-                        background: .gray.opacity(0.1)
-                    ))
-                    .multiline(lines: 1, scales: [1: 0.5])
-                    .animation(type: .pulse())
-                    .frame(height: 12)
+                if viewModel.viewMode {
+                    Text("Quit")
+                        .frame(height: 10)
+                        .background(
+                            Color(
+                                red: colorScheme == .dark ? 1 : 0,
+                                green: colorScheme == .dark ? 1 : 0,
+                                blue: colorScheme == .dark ? 1 : 0
+                            )
+                            .opacity(hover1 ? 0.3 : 0.0)
+                            .frame(width: 30, height: 15)
+                            .cornerRadius(5)
+                        )
+                        .onHover { hovering in
+                            hover1 = hovering
+                        }
+                        .onTapGesture {
+                            NSApp.terminate(self)
+                        }
+                        .padding(.trailing, 3)
+                } else {
+                    Text(createContributionsCount(count: viewModel.contributions.count))
+                        .skeleton(with: skeletonFlag())
+                        .shape(type: .rounded(.radius(5, style: .continuous)))
+                        .appearance(type: .solid(
+                            color: .white.opacity(0.1),
+                            background: .gray.opacity(0.1)
+                        ))
+                        .multiline(lines: 1, scales: [1: 0.5])
+                        .animation(type: .pulse())
+                        .frame(height: 12)
+                }
+
             }
             .captionStyle()
             if viewModel.viewMode {
@@ -106,7 +130,8 @@ public struct ContributionsView: View {
     }
     private func createImage() -> Image {
         if viewModel.viewMode {
-            return Image("GitHubMark")
+//            return Image("GitHubMark")
+            return Image(systemName: "arrowshape.turn.up.backward.circle")
         } else {
             return Image(systemName: "gearshape")
         }

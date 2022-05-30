@@ -52,26 +52,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func menuButtonAction(sender: AnyObject) {
         // 右クリック
-        rightClick()
+//        rightClick()
         // 左クリック
         leftClick(sender: sender)
     }
 
-    func rightClick() {
-        guard let event = NSApp.currentEvent else { return }
-        if event.type == NSEvent.EventType.rightMouseUp {
-            let menu = NSMenu()
-            menu.addItem(
-                withTitle: NSLocalizedString("Quit", comment: "Quit app"),
-                action: #selector(quit),
-                keyEquivalent: ""
-            )
-            statusBarItem.menu = menu
-            statusBarItem.button?.performClick(nil)
-            statusBarItem.menu = nil
-            return
-        }
-    }
+//    func rightClick() {
+//        guard let event = NSApp.currentEvent else { return }
+//        if event.type == NSEvent.EventType.rightMouseUp {
+//            let menu = NSMenu()
+//            menu.addItem(
+//                withTitle: NSLocalizedString("Quit", comment: "Quit app"),
+//                action: #selector(quit),
+//                keyEquivalent: ""
+//            )
+//            statusBarItem.menu = menu
+//            statusBarItem.button?.performClick(nil)
+//            statusBarItem.menu = nil
+//            return
+//        }
+//    }
 
     func leftClick(sender: AnyObject) {
         guard let button = self.statusBarItem.button else { return }
@@ -85,7 +85,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    @objc func quit() {
-        NSApp.terminate(self)
-    }
+//    @objc func quit() {
+//        NSApp.terminate(self)
+//    }
 }
