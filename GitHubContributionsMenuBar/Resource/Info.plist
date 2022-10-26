@@ -6,5 +6,7 @@
 	<true/>
 	<key>CBBundleDisplayName</key>
 	<string>Contributions</string>
+	<key>CFBundleIconFile</key>
+	<string>icon.icns</string>
 </dict>
 </plist>
