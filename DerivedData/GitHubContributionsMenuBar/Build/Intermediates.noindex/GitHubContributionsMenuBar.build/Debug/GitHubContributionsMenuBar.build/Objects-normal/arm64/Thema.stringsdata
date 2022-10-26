@@ -1,0 +1,32 @@
+{
+  "source": "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/Thema.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Thema"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Green"
+      },
+      {
+        "comment": "",
+        "key": "Blue"
+      },
+      {
+        "comment": "",
+        "key": "Red"
+      },
+      {
+        "comment": "",
+        "key": "Purple"
+      }
+    ]
+  },
+  "version": 1
+}

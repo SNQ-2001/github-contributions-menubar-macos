@@ -1,0 +1,16 @@
+{
+  "source": "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/OpenSource.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Open Source"
+      },
+      {
+        "comment": "",
+        "key": "Feel free to contribute!"
+      }
+    ]
+  },
+  "version": 1
+}

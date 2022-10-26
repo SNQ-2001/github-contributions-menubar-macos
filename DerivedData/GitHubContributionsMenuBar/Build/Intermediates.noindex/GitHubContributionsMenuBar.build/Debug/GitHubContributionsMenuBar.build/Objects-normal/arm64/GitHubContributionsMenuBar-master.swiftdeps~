@@ -1,0 +1,22 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "a7c8da2b0ca9c4ab96f6f2e091b8e6bbe6b3f39024ccb63641ca74317c93f0a8"
+build_start_time: [1666769184, 826426982]
+build_end_time: [1666769184, 886159896]
+inputs:
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Extensions/ArrayExtensions.swift": !private [1656148223, 136405467]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Extensions/ColorExtensions.swift": !private [1656148223, 136499404]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Extensions/NetworkExtensions.swift": !private [1656148223, 136590480]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Extensions/ViewExtensions.swift": !private [1656148223, 136682033]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/GitHubContributionsMenuBarApp.swift": !private [1666769184, 261476516]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Network/Contribution.swift": !private [1656148223, 137115955]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/Network/GitHub.swift": !private [1656148223, 137221813]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/ContentView.swift": !private [1656148223, 137517690]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Contributions/ContributionsView.swift": !private [1656148223, 137655735]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Contributions/GridStack.swift": !private [1656148223, 137739896]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/OpenSource.swift": !private [1656148223, 137870788]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/SettingsLabelStyle.swift": !private [1656148223, 137951374]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/SettingsView.swift": !private [1656148223, 138046741]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/Thema.swift": !private [1656148223, 138135194]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/Settings/UserName.swift": !private [1656148223, 138212203]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/View/UXView.swift": !private [1656148223, 138297796]
+  "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/GitHubContributionsMenuBar/ViewModel/ContributionsViewModel.swift": !private [1656148223, 138438224]

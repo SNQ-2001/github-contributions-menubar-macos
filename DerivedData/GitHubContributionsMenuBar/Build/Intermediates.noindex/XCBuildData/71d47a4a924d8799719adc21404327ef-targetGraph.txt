@@ -1,0 +1,10 @@
+Target dependency graph (5 targets)
+SwiftSoup in SwiftSoup, no dependencies
+SwiftSoup in SwiftSoup, depends on:
+SwiftSoup in SwiftSoup (explicit)
+SkeletonUI in SkeletonUI, no dependencies
+SkeletonUI in SkeletonUI, depends on:
+SkeletonUI in SkeletonUI (explicit)
+GitHubContributionsMenuBar in GitHubContributionsMenuBar, depends on:
+SwiftSoup in SwiftSoup (explicit)
+SkeletonUI in SkeletonUI (explicit)

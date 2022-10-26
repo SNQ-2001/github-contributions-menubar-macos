@@ -7,25 +7,25 @@
 
 import Foundation
 
-extension GitHub {
-    public struct Contribution {
+public extension GitHub {
+    struct Contribution {
 
         /// The date when the contributions ocurred.
-        public let date: Date
+        let date: Date
 
         /// Number of contributions.
-        public let count: Int
+        let count: Int
 
         /// Level of contributions.
-        public let level: Level
+        let level: Level
 
         /// Constants that indicate the amount of contributions:
         /// Level `.zero` means zero contributions.
-        public enum Level: Int, CaseIterable {
+        enum Level: Int, CaseIterable {
             case zero, first, second, third, fourth
         }
 
-        public init(date: Date, count: Int, level: Level) {
+        init(date: Date, count: Int, level: Level) {
             self.date = date
             self.count = count
             self.level = level

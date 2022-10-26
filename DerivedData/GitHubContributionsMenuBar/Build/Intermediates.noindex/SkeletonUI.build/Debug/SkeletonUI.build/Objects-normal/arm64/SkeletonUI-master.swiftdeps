@@ -1,0 +1,71 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "d09cb7d0b0cee7f4ff351e9f6e7d3d0d5dc600c92b9df1ca114e054254fe19a6"
+build_start_time: [1666769178, 724275112]
+build_end_time: [1666769178, 816882133]
+inputs:
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Angle/AngleInteractor.swift"
+  : !private [1661940397, 723212957]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Angle/AnglePresenter.swift"
+  : !private [1661940397, 723296165]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Animation/AnimationInteractor.swift"
+  : !private [1661940397, 723411560]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Appearance/AppearanceInteractor.swift"
+  : !private [1661940397, 723547697]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Appearance/AppearancePresenter.swift"
+  : !private [1661940397, 723628044]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/ClosedRange+Normalize.swift"
+  : !private [1661940397, 723765611]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/Image+OptionalType.swift"
+  : !private [1661940397, 724063396]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/ModifiedContent+SkeletonModifier.swift"
+  : !private [1661940397, 724165439]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/Optional+OptionalType.swift"
+  : !private [1661940397, 724252700]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/SecureField+OptionalType.swift"
+  : !private [1661940397, 724377393]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/Text+OptionalType.swift"
+  : !private [1661940397, 724713325]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/TextField+OptionalType.swift"
+  : !private [1661940397, 724866628]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/Toggle+OptionalType.swift"
+  : !private [1661940397, 724946975]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/UnitPoint+Angle.swift"
+  : !private [1661940397, 725162029]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Extensions/View+SkeletonModifier.swift"
+  : !private [1661940397, 725302457]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Modifiers/SkeletonModifier.swift"
+  : !private [1661940397, 725599765]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Multiline/MultilineInteractor.swift"
+  : !private [1661940397, 725736618]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Multiline/MultilinePresenter.swift"
+  : !private [1661940397, 725845336]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Opacity/OpacityInteractor.swift"
+  : !private [1661940397, 726069927]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Opacity/OpacityPresenter.swift"
+  : !private [1661940397, 726179838]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Position/PositionInteractor.swift"
+  : !private [1661940397, 726448535]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Position/PositionPresenter.swift"
+  : !private [1661940397, 726524353]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Protocols/OptionalType.swift"
+  : !private [1661940397, 726646900]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Radius/RadiusInteractor.swift"
+  : !private [1661940397, 726760864]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Radius/RadiusPresenter.swift"
+  : !private [1661940397, 726831674]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Shape/ShapeInteractor.swift"
+  : !private [1661940397, 726946353]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Shape/ShapePresenter.swift"
+  : !private [1661940397, 727371215]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonForEach.swift"
+  : !private [1661940397, 727546930]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonInteractor.swift"
+  : !private [1661940397, 727628231]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonList.swift"
+  : !private [1661940397, 727879047]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonPresenter.swift"
+  : !private [1661940397, 728005409]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonShape.swift"
+  : !private [1661940397, 728142261]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SkeletonUI/Sources/SkeletonUI/Skeleton/SkeletonView.swift"
+  : !private [1661940397, 728223323]

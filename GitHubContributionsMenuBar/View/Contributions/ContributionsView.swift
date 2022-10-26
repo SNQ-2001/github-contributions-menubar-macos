@@ -105,15 +105,15 @@ public struct ContributionsView: View {
     }
     private func color() -> [[Color]] {
         if viewModel.thema == 0 {
-            return viewModel.contributions.levels.map { $0.map(\.Green) }
+            return viewModel.contributions.levels.map { $0.map(\.green) }
         } else if viewModel.thema == 1 {
-            return viewModel.contributions.levels.map { $0.map(\.Blue) }
+            return viewModel.contributions.levels.map { $0.map(\.blue) }
         } else if viewModel.thema == 2 {
-            return viewModel.contributions.levels.map { $0.map(\.Red) }
+            return viewModel.contributions.levels.map { $0.map(\.red) }
         } else if viewModel.thema == 3 {
-            return viewModel.contributions.levels.map { $0.map(\.Purple) }
+            return viewModel.contributions.levels.map { $0.map(\.purple) }
         } else {
-            return viewModel.contributions.levels.map { $0.map(\.Green) }
+            return viewModel.contributions.levels.map { $0.map(\.green) }
         }
     }
     private func skeletonFlag() -> Bool {
@@ -130,7 +130,6 @@ public struct ContributionsView: View {
     }
     private func createImage() -> Image {
         if viewModel.viewMode {
-//            return Image("GitHubMark")
             return Image(systemName: "arrowshape.turn.up.backward.circle")
         } else {
             return Image(systemName: "gearshape")

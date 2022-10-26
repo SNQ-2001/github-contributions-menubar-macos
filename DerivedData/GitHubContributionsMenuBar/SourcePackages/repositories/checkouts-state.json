@@ -1,0 +1,19 @@
+{
+  "object" : {
+    "repositories" : {
+      "https://github.com/CSolanaM/SkeletonUI" : {
+        "repositoryURL" : "https://github.com/CSolanaM/SkeletonUI",
+        "subpath" : "SkeletonUI-720a96f1"
+      },
+      "https://github.com/pointfreeco/swift-snapshot-testing" : {
+        "repositoryURL" : "https://github.com/pointfreeco/swift-snapshot-testing",
+        "subpath" : "swift-snapshot-testing-09b08963"
+      },
+      "https://github.com/scinfu/SwiftSoup" : {
+        "repositoryURL" : "https://github.com/scinfu/SwiftSoup",
+        "subpath" : "SwiftSoup-7ed1966e"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,36 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7421FAE7FDA2BE2AD5C73E797CF4A8EA7F419B16" : 0,
+    "2EDCE750B76209AA97A5FD58229BEC98DDDF69A4" : 0,
+    "F3D3B7EFF1017084DF8D43F57E075DC6367991FB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "193C7773-DC80-4FC7-99EF-D66CF779BC53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7421FAE7FDA2BE2AD5C73E797CF4A8EA7F419B16" : "GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/checkouts\/SkeletonUI\/",
+    "2EDCE750B76209AA97A5FD58229BEC98DDDF69A4" : "GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/checkouts\/swift-snapshot-testing\/",
+    "F3D3B7EFF1017084DF8D43F57E075DC6367991FB" : "GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/checkouts\/SwiftSoup\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GitHubContributionsMenuBar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GitHubContributionsMenuBar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/miyamototaishin\/Desktop\/GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/repositories\/swift-snapshot-testing-09b08963",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2EDCE750B76209AA97A5FD58229BEC98DDDF69A4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/miyamototaishin\/Desktop\/GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/repositories\/SkeletonUI-720a96f1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7421FAE7FDA2BE2AD5C73E797CF4A8EA7F419B16"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/miyamototaishin\/Desktop\/GitHubContributionsMenuBar\/DerivedData\/GitHubContributionsMenuBar\/SourcePackages\/repositories\/SwiftSoup-7ed1966e",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F3D3B7EFF1017084DF8D43F57E075DC6367991FB"
+    }
+  ]
+}

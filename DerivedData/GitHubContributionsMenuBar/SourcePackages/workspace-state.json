@@ -1,0 +1,61 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "skeletonui",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/CSolanaM/SkeletonUI",
+          "name" : "SkeletonUI"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "132f12a34b7fdab275bfc61968749b1f11c36300",
+            "version" : "1.0.7"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "SkeletonUI"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-snapshot-testing",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
+          "name" : "SnapshotTesting"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "f8a9c997c3c1dab4e216a8ec9014e23144cbab37",
+            "version" : "1.9.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "swift-snapshot-testing"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swiftsoup",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/scinfu/SwiftSoup",
+          "name" : "SwiftSoup"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "41e7c263fb8c277e980ebcb9b0b5f6031d3d4886",
+            "version" : "2.4.2"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "SwiftSoup"
+      }
+    ]
+  },
+  "version" : 5
+}

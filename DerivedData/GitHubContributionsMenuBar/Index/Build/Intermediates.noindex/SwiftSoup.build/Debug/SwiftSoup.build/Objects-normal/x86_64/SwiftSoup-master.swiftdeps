@@ -1,0 +1,121 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "d509d598f081be8284cbd71d7084d5f5ddcc816b355db0cf9e889070450313b2"
+build_start_time: [1663649796, 938155174]
+build_end_time: [1663649798, 826668977]
+inputs:
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/ArrayExt.swift"
+  : [1661940398, 104091167]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Attribute.swift"
+  : [1661940398, 104185581]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Attributes.swift"
+  : [1661940398, 104309320]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/BinarySearch.swift"
+  : [1661940398, 104390144]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/BooleanAttribute.swift"
+  : [1661940398, 104468107]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/CharacterExt.swift"
+  : [1661940398, 104557991]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/CharacterReader.swift"
+  : [1661940398, 104711055]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Cleaner.swift"
+  : [1661940398, 104812383]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Collector.swift"
+  : [1661940398, 104891777]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/CombiningEvaluator.swift"
+  : [1661940398, 104983329]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Comment.swift"
+  : [1661940398, 105056762]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Connection.swift"
+  : [1661940398, 105128765]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/CssSelector.swift"
+  : [1661940398, 105224847]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/DataNode.swift"
+  : [1661940398, 105302333]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/DataUtil.swift"
+  : [1661940398, 105376958]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Document.swift"
+  : [1661940398, 105561017]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/DocumentType.swift"
+  : [1661940398, 105649471]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Element.swift"
+  : [1661940398, 106033086]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Elements.swift"
+  : [1661940398, 106198072]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Entities.swift"
+  : [1661940398, 106554985]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Evaluator.swift"
+  : [1661940398, 106724739]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Exception.swift"
+  : [1661940398, 106799602]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/FormElement.swift"
+  : [1661940398, 106883049]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/HtmlTreeBuilder.swift"
+  : [1661940398, 107105016]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/HtmlTreeBuilderState.swift"
+  : [1661940398, 107538938]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/HttpStatusException.swift"
+  : [1661940398, 107634544]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Mutex.swift"
+  : [1661940398, 108167171]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Node.swift"
+  : [1661940398, 108650207]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/NodeTraversor.swift"
+  : [1661940398, 108741760]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/NodeVisitor.swift"
+  : [1661940398, 108823299]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/OrderedSet.swift"
+  : [1661940398, 108943462]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/ParseError.swift"
+  : [1661940398, 109029769]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/ParseErrorList.swift"
+  : [1661940398, 109117507]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/ParseSettings.swift"
+  : [1661940398, 109209537]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Parser.swift"
+  : [1661940398, 109309196]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Pattern.swift"
+  : [1661940398, 109387397]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/QueryParser.swift"
+  : [1661940398, 109514236]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/SerializationException.swift"
+  : [1661940398, 109611034]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/SimpleDictionary.swift"
+  : [1661940398, 109707355]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/StreamReader.swift"
+  : [1661940398, 109803676]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/String.swift"
+  : [1661940398, 109994411]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/StringBuilder.swift"
+  : [1661940398, 110139846]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/StringUtil.swift"
+  : [1661940398, 110291481]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/StructuralEvaluator.swift"
+  : [1661940398, 110447645]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/SwiftSoup.swift"
+  : [1661940398, 110651969]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Tag.swift"
+  : [1661940398, 110817432]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/TextNode.swift"
+  : [1661940398, 110920667]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Token.swift"
+  : [1661940398, 111066341]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/TokenQueue.swift"
+  : [1661940398, 111389160]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Tokeniser.swift"
+  : [1661940398, 111522674]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/TokeniserState.swift"
+  : [1661940398, 111863374]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/TreeBuilder.swift"
+  : [1661940398, 111968040]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/UnfairLock.swift"
+  : [1661940398, 112048387]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/UnicodeScalar.swift"
+  : [1661940398, 112133026]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Validate.swift"
+  : [1661940398, 112224102]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/Whitelist.swift"
+  : [1661940398, 112789154]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/XmlDeclaration.swift"
+  : [1661940398, 112904071]
+  ? "/Users/miyamototaishin/Desktop/GitHubContributionsMenuBar/DerivedData/GitHubContributionsMenuBar/SourcePackages/checkouts/SwiftSoup/Sources/XmlTreeBuilder.swift"
+  : [1661940398, 113016843]

@@ -31,5 +31,3 @@ struct SettingsView: View {
         }
     }
 }
-
-
