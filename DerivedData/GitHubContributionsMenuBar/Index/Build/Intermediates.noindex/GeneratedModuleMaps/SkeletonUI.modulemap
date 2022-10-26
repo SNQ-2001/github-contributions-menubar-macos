@@ -1,4 +1,0 @@
-module SkeletonUI {
-header "SkeletonUI-Swift.h"
-export *
-}
