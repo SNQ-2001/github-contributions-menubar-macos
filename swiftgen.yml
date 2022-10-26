@@ -1,0 +1,6 @@
+xcassets:
+  inputs:
+    - GitHubContributionsMenuBar/Resource/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: GitHubContributionsMenuBar/Generated/Assets.swift

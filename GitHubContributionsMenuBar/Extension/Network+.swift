@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension GitHub.Contribution.Level {
-    var Green: Color {
+    var green: Color {
         switch self {
         case .zero: return .emptyTile
         case .first: return .greenLevel1
@@ -17,7 +17,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .greenLevel4
         }
     }
-    var Blue: Color {
+    var blue: Color {
         switch self {
         case .zero: return .emptyTile
         case .first: return .blueLevel1
@@ -26,7 +26,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .blueLevel4
         }
     }
-    var Red: Color {
+    var red: Color {
         switch self {
         case .zero: return .emptyTile
         case .first: return .redLevel1
@@ -35,7 +35,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .redLevel4
         }
     }
-    var Purple: Color {
+    var purple: Color {
         switch self {
         case .zero: return .emptyTile
         case .first: return .purpleLevel1

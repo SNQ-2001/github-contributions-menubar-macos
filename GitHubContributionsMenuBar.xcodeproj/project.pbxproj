@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
+		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
 		1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */; };
-		1C6694962822EA3A00ABFED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694952822EA3A00ABFED2 /* Assets.xcassets */; };
 		1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */; };
 		1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A22822EAD900ABFED2 /* ContentView.swift */; };
 		1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */; };
-		1C6694A92822EB4F00ABFED2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A82822EB4F00ABFED2 /* ArrayExtensions.swift */; };
-		1C6694AB2822EB6600ABFED2 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AA2822EB6600ABFED2 /* ColorExtensions.swift */; };
+		1C6694A92822EB4F00ABFED2 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A82822EB4F00ABFED2 /* Array+.swift */; };
+		1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AA2822EB6600ABFED2 /* Color+.swift */; };
 		1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */; };
 		1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AE2822EBC300ABFED2 /* GridStack.swift */; };
 		1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B02822EBD800ABFED2 /* UXView.swift */; };
-		1C6694B52822EC2700ABFED2 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B42822EC2700ABFED2 /* ViewExtensions.swift */; };
+		1C6694B52822EC2700ABFED2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B42822EC2700ABFED2 /* View+.swift */; };
 		1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B72822EC8F00ABFED2 /* Contribution.swift */; };
 		1C6694BA2822ECA400ABFED2 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B92822ECA400ABFED2 /* GitHub.swift */; };
 		1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BC2822ECC500ABFED2 /* SwiftSoup */; };
 		1C6694C02822ECE100ABFED2 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BF2822ECE100ABFED2 /* SkeletonUI */; };
-		1C6694C22822EDC300ABFED2 /* NetworkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* NetworkExtensions.swift */; };
+		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
 		1CAFD68F282417F000C9A576 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68E282417F000C9A576 /* UserName.swift */; };
@@ -31,23 +32,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C17874F2909248700BFEB6E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1C1787532909291900BFEB6E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1C17875529092A3800BFEB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C66948E2822EA3800ABFED2 /* Contributions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contributions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubContributionsMenuBarApp.swift; sourceTree = "<group>"; };
-		1C6694952822EA3A00ABFED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubContributionsMenuBar.entitlements; sourceTree = "<group>"; };
-		1C6694A12822EAB700ABFED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1C6694A12822EAB700ABFED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C6694A22822EAD900ABFED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsViewModel.swift; sourceTree = "<group>"; };
-		1C6694A82822EB4F00ABFED2 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		1C6694AA2822EB6600ABFED2 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		1C6694A82822EB4F00ABFED2 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		1C6694AA2822EB6600ABFED2 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsView.swift; sourceTree = "<group>"; };
 		1C6694AE2822EBC300ABFED2 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		1C6694B02822EBD800ABFED2 /* UXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXView.swift; sourceTree = "<group>"; };
-		1C6694B42822EC2700ABFED2 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		1C6694B42822EC2700ABFED2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		1C6694B72822EC8F00ABFED2 /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
 		1C6694B92822ECA400ABFED2 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
-		1C6694C12822EDC300ABFED2 /* NetworkExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtensions.swift; sourceTree = "<group>"; };
+		1C6694C12822EDC300ABFED2 /* Network+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+.swift"; sourceTree = "<group>"; };
 		1CAFD6852823D81100C9A576 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelStyle.swift; sourceTree = "<group>"; };
 		1CAFD68E282417F000C9A576 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
@@ -68,6 +71,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C17874C290921ED00BFEB6E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1C17874F2909248700BFEB6E /* Settings.bundle */,
+				1C17875529092A3800BFEB6E /* Assets.xcassets */,
+				1C6694A12822EAB700ABFED2 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1C17874D290922D200BFEB6E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				1C1787532909291900BFEB6E /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		1C6694852822EA3800ABFED2 = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +108,14 @@
 		1C6694902822EA3800ABFED2 /* GitHubContributionsMenuBar */ = {
 			isa = PBXGroup;
 			children = (
-				1C6694A12822EAB700ABFED2 /* Info.plist */,
+				1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */,
 				1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */,
 				1C6694A02822EA5800ABFED2 /* View */,
 				1C6694B62822EC7200ABFED2 /* Network */,
 				1C6694A42822EAED00ABFED2 /* ViewModel */,
-				1C6694A72822EB3200ABFED2 /* Extensions */,
-				1C6694952822EA3A00ABFED2 /* Assets.xcassets */,
-				1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */,
+				1C17874D290922D200BFEB6E /* Generated */,
+				1C6694A72822EB3200ABFED2 /* Extension */,
+				1C17874C290921ED00BFEB6E /* Resource */,
 				1C6694972822EA3A00ABFED2 /* Preview Content */,
 			);
 			path = GitHubContributionsMenuBar;
@@ -127,15 +148,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		1C6694A72822EB3200ABFED2 /* Extensions */ = {
+		1C6694A72822EB3200ABFED2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1C6694A82822EB4F00ABFED2 /* ArrayExtensions.swift */,
-				1C6694AA2822EB6600ABFED2 /* ColorExtensions.swift */,
-				1C6694B42822EC2700ABFED2 /* ViewExtensions.swift */,
-				1C6694C12822EDC300ABFED2 /* NetworkExtensions.swift */,
+				1C6694A82822EB4F00ABFED2 /* Array+.swift */,
+				1C6694AA2822EB6600ABFED2 /* Color+.swift */,
+				1C6694B42822EC2700ABFED2 /* View+.swift */,
+				1C6694C12822EDC300ABFED2 /* Network+.swift */,
 			);
-			path = Extensions;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		1C6694B62822EC7200ABFED2 /* Network */ = {
@@ -178,6 +199,7 @@
 				1C66948A2822EA3800ABFED2 /* Sources */,
 				1C66948B2822EA3800ABFED2 /* Frameworks */,
 				1C66948C2822EA3800ABFED2 /* Resources */,
+				1C17874E290923D800BFEB6E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -200,7 +222,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					1C66948D2822EA3800ABFED2 = {
 						CreatedOnToolsVersion = 13.3;
@@ -235,11 +257,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
-				1C6694962822EA3A00ABFED2 /* Assets.xcassets in Resources */,
+				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C17874E290923D800BFEB6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/opt/homebrew/bin:$PATH\n\nif which mint >/dev/null; then\n    # SwiftGen\n    xcrun --sdk macosx mint run swiftgen\n    # SwiftLint\n    xcrun --sdk macosx mint run swiftlint\n    # LicensePlist\n    xcrun --sdk macosx mint run mono0926/LicensePlist --output-path $PROJECT_NAME/Resource/Settings.bundle\nelse \n    echo 'warning: mint not installed.'\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C66948A2822EA3800ABFED2 /* Sources */ = {
@@ -247,13 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */,
-				1C6694A92822EB4F00ABFED2 /* ArrayExtensions.swift in Sources */,
+				1C6694A92822EB4F00ABFED2 /* Array+.swift in Sources */,
 				1CAFD6912824181200C9A576 /* Thema.swift in Sources */,
-				1C6694C22822EDC300ABFED2 /* NetworkExtensions.swift in Sources */,
+				1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */,
 				1CAFD68F282417F000C9A576 /* UserName.swift in Sources */,
 				1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */,
 				1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */,
 				1CAFD6932824186B00C9A576 /* OpenSource.swift in Sources */,
+				1C1787542909291900BFEB6E /* Assets.swift in Sources */,
 				1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */,
 				1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */,
 				1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */,
@@ -261,8 +305,8 @@
 				1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */,
 				1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */,
 				1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */,
-				1C6694B52822EC2700ABFED2 /* ViewExtensions.swift in Sources */,
-				1C6694AB2822EB6600ABFED2 /* ColorExtensions.swift in Sources */,
+				1C6694B52822EC2700ABFED2 /* View+.swift in Sources */,
+				1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +346,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -362,6 +407,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -391,13 +437,14 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.8;
+				CURRENT_PROJECT_VERSION = 109;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubContributionsMenuBar/Info.plist;
+				INFOPLIST_FILE = GitHubContributionsMenuBar/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contributions;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -406,7 +453,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -423,13 +471,14 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.8;
+				CURRENT_PROJECT_VERSION = 109;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubContributionsMenuBar/Info.plist;
+				INFOPLIST_FILE = GitHubContributionsMenuBar/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contributions;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -438,7 +487,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;

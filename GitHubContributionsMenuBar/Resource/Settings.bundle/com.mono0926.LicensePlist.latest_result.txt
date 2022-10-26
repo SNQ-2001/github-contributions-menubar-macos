@@ -1,0 +1,11 @@
+name: SwiftLint, nameSpecified: , owner: realm, version: 0.49.1, source: https://github.com/realm/SwiftLint
+
+name: SkeletonUI, nameSpecified: SkeletonUI, owner: CSolanaM, version: 1.0.7, source: https://github.com/CSolanaM/SkeletonUI
+
+name: swift-snapshot-testing, nameSpecified: SnapshotTesting, owner: pointfreeco, version: 1.9.0, source: https://github.com/pointfreeco/swift-snapshot-testing
+
+name: SwiftSoup, nameSpecified: SwiftSoup, owner: scinfu, version: 2.4.2, source: https://github.com/scinfu/SwiftSoup
+
+add-version-numbers: false
+
+LicensePlist Version: 3.23.4

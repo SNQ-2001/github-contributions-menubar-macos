@@ -1,0 +1,27 @@
+# 無効にするルール
+disabled_rules:
+- function_body_length
+- line_length
+- trailing_whitespace
+- nesting
+
+# Lint対象にするファイル
+included:
+- GitHubContributionsMenuBar
+
+# Lint対象から外すファイル
+excluded:
+
+# 型の行数制限
+type_body_length:
+- 400
+- 600
+
+# 1ファイルの行数制限
+file_length:
+- 600
+- 1000
+
+# レポートの種類
+reporter:
+- json

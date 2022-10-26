@@ -21,7 +21,6 @@ public struct GitHub {
 
     // MARK: - Public Methods
 
-
     public static func getContributions(for username: String, queue: DispatchQueue) -> Future<[Contribution], Error> {
         Future { promise in
             queue.async {
@@ -58,4 +57,3 @@ public struct GitHub {
         return Contribution(date: date, count: count, level: Contribution.Level(rawValue: level) ?? .zero)
     }
 }
-

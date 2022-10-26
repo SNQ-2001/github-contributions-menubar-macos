@@ -4,5 +4,7 @@
 <dict>
 	<key>LSUIElement</key>
 	<true/>
+	<key>CBBundleDisplayName</key>
+	<string>Contributions</string>
 </dict>
 </plist>
