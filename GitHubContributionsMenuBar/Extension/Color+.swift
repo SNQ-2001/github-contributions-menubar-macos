@@ -12,37 +12,37 @@ public extension Color {
 
     // MARK: - Tile Border
 
-    static var tileBorder: Color = Color("tileBorder")
+    static var tileBorder: Color = Asset.tileBorder.swiftUIColor
 
     // MARK: - Empty Tile
 
-    static var emptyTile: Color = Color("emptyTile")
+    static var emptyTile: Color = Asset.emptyTile.swiftUIColor
 
     // MARK: - Blue Theme
 
-    static let blueLevel1 = Color("BlueLevel1")
-    static let blueLevel2 = Color("BlueLevel2")
-    static let blueLevel3 = Color("BlueLevel3")
-    static let blueLevel4 = Color("BlueLevel4")
+    static let blueLevel1 = Asset.blueLevel1.swiftUIColor
+    static let blueLevel2 = Asset.blueLevel2.swiftUIColor
+    static let blueLevel3 = Asset.blueLevel3.swiftUIColor
+    static let blueLevel4 = Asset.blueLevel4.swiftUIColor
 
     // MARK: - Green Theme
 
-    static let greenLevel1 = Color("GreenLevel1")
-    static let greenLevel2 = Color("GreenLevel2")
-    static let greenLevel3 = Color("GreenLevel3")
-    static let greenLevel4 = Color("GreenLevel4")
+    static let greenLevel1 = Asset.greenLevel1.swiftUIColor
+    static let greenLevel2 = Asset.greenLevel2.swiftUIColor
+    static let greenLevel3 = Asset.greenLevel3.swiftUIColor
+    static let greenLevel4 = Asset.greenLevel4.swiftUIColor
 
     // MARK: - Red Theme
 
-    static let redLevel1 = Color("RedLevel1")
-    static let redLevel2 = Color("RedLevel2")
-    static let redLevel3 = Color("RedLevel3")
-    static let redLevel4 = Color("RedLevel4")
+    static let redLevel1 = Asset.redLevel1.swiftUIColor
+    static let redLevel2 = Asset.redLevel2.swiftUIColor
+    static let redLevel3 = Asset.redLevel3.swiftUIColor
+    static let redLevel4 = Asset.redLevel4.swiftUIColor
 
     // MARK: - Purple Theme
 
-    static let purpleLevel1 = Color("PurpleLevel1")
-    static let purpleLevel2 = Color("PurpleLevel2")
-    static let purpleLevel3 = Color("PurpleLevel3")
-    static let purpleLevel4 = Color("PurpleLevel4")
+    static let purpleLevel1 = Asset.purpleLevel1.swiftUIColor
+    static let purpleLevel2 = Asset.purpleLevel2.swiftUIColor
+    static let purpleLevel3 = Asset.purpleLevel3.swiftUIColor
+    static let purpleLevel4 = Asset.purpleLevel4.swiftUIColor
 }

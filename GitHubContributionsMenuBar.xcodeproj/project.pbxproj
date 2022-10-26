@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
+		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
 		1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */; };
-		1C6694962822EA3A00ABFED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694952822EA3A00ABFED2 /* Assets.xcassets */; };
 		1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */; };
 		1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A22822EAD900ABFED2 /* ContentView.swift */; };
 		1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */; };
@@ -33,9 +33,10 @@
 
 /* Begin PBXFileReference section */
 		1C17874F2909248700BFEB6E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1C1787532909291900BFEB6E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1C17875529092A3800BFEB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C66948E2822EA3800ABFED2 /* Contributions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contributions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubContributionsMenuBarApp.swift; sourceTree = "<group>"; };
-		1C6694952822EA3A00ABFED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubContributionsMenuBar.entitlements; sourceTree = "<group>"; };
 		1C6694A12822EAB700ABFED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				1C17874F2909248700BFEB6E /* Settings.bundle */,
+				1C17875529092A3800BFEB6E /* Assets.xcassets */,
 				1C6694A12822EAB700ABFED2 /* Info.plist */,
-				1C6694952822EA3A00ABFED2 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -83,6 +84,7 @@
 		1C17874D290922D200BFEB6E /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				1C1787532909291900BFEB6E /* Assets.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -256,7 +258,6 @@
 			files = (
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
 				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
-				1C6694962822EA3A00ABFED2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +297,7 @@
 				1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */,
 				1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */,
 				1CAFD6932824186B00C9A576 /* OpenSource.swift in Sources */,
+				1C1787542909291900BFEB6E /* Assets.swift in Sources */,
 				1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */,
 				1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */,
 				1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */,
