@@ -25,6 +25,7 @@
 		1C6694C02822ECE100ABFED2 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BF2822ECE100ABFED2 /* SkeletonUI */; };
 		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1C921BF22909399300BA091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C921BF12909399300BA091E /* README.md */; };
+		1CA831B9290950D900FC6AB4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CA831B8290950D900FC6AB4 /* icon.icns */; };
 		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
 		1CAFD68F282417F000C9A576 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68E282417F000C9A576 /* UserName.swift */; };
@@ -53,6 +54,7 @@
 		1C6694B92822ECA400ABFED2 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		1C6694C12822EDC300ABFED2 /* Network+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+.swift"; sourceTree = "<group>"; };
 		1C921BF12909399300BA091E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		1CA831B8290950D900FC6AB4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		1CAFD6852823D81100C9A576 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelStyle.swift; sourceTree = "<group>"; };
 		1CAFD68E282417F000C9A576 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				1C17874F2909248700BFEB6E /* Settings.bundle */,
 				1C17875529092A3800BFEB6E /* Assets.xcassets */,
 				1C6694A12822EAB700ABFED2 /* Info.plist */,
+				1CA831B8290950D900FC6AB4 /* icon.icns */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C921BF22909399300BA091E /* README.md in Resources */,
+				1CA831B9290950D900FC6AB4 /* icon.icns in Resources */,
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
 				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
 			);
@@ -368,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -437,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/GitHubContributionsMenuBar.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/GitHubContributionsMenuBar.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
