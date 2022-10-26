@@ -17,8 +17,8 @@ Quickly check in on your GitHub contributions from your Menu Bar!
 
 ## Requirements
 
-- macOS 12.3+
-- Xcode 13.0+
+- macOS 13.0+
+- Xcode 14.1+
 
 ## Contributing
 
@@ -32,7 +32,10 @@ If you have feature requests or bug reports, feel free to help out by sending pu
 
 - [SwiftSoup](https://github.com/scinfu/SwiftSoup) by [@scinfu](https://github.com/scinfu)
 - [SkeletonUI](https://github.com/CSolanaM/SkeletonUI) by [CSolanaM](https://github.com/CSolanaM)
-- [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing) by [pointfreeco](https://github.com/pointfreeco) 
+- [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing) by [pointfreeco](https://github.com/pointfreeco)
+- [LicensePlist](https://github.com/mono0926/LicensePlist) by [mono0926](https://github.com/mono0926)
+- [SwiftGen](https://github.com/SwiftGen/SwiftGen) by [SwiftGen](https://github.com/SwiftGen)
+- [SwiftLint](https://github.com/realm/SwiftLint) by [realm](https://github.com/realm)
 
 ## License
 
