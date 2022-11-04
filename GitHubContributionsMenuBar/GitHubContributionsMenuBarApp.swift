@@ -14,7 +14,7 @@ struct GitHubContributionsMenuBarApp: App {
         MenuBarExtra {
             ContentView(viewModel: viewModel)
         } label: {
-            Image(nsImage: NSImage(named: Asset.menubar.name))
+            Image(nsImage: NSImage(named: Asset.menuBarIcon.name))
         }
         .menuBarExtraStyle(.window)
     }

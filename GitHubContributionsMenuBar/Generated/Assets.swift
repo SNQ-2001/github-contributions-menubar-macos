@@ -44,7 +44,7 @@ internal enum Asset {
   internal static let emptyTile = ColorAsset(name: "emptyTile")
   internal static let tileBorder = ColorAsset(name: "tileBorder")
   internal static let gitHubMark = ImageAsset(name: "GitHubMark")
-  internal static let menubar = ImageAsset(name: "menubar")
+  internal static let menuBarIcon = ImageAsset(name: "menuBarIcon")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
 		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
+		1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C17875529092A3800BFEB6E /* Assets.xcassets */; };
 		1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */; };
 		1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */; };
 		1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A22822EAD900ABFED2 /* ContentView.swift */; };
@@ -264,6 +265,7 @@
 			files = (
 				1C921BF22909399300BA091E /* README.md in Resources */,
 				1CA831B9290950D900FC6AB4 /* icon.icns in Resources */,
+				1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */,
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
 				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
 			);
