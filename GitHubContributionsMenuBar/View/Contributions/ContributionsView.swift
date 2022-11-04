@@ -5,8 +5,8 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import SwiftUI
 import SkeletonUI
+import SwiftUI
 
 public struct ContributionsView: View {
     @ObservedObject var viewModel: ContributionsViewModel
@@ -83,7 +83,6 @@ public struct ContributionsView: View {
                         .animation(type: .pulse())
                         .frame(height: 12)
                 }
-
             }
             .captionStyle()
             if viewModel.viewMode {
@@ -103,6 +102,7 @@ public struct ContributionsView: View {
             }
         }
     }
+
     private func color() -> [[Color]] {
         if viewModel.thema == 0 {
             return viewModel.contributions.levels.map { $0.map(\.green) }
@@ -116,6 +116,7 @@ public struct ContributionsView: View {
             return viewModel.contributions.levels.map { $0.map(\.green) }
         }
     }
+
     private func skeletonFlag() -> Bool {
         if viewModel.viewMode {
             return true
@@ -125,9 +126,11 @@ public struct ContributionsView: View {
             return false
         }
     }
+
     private func createContributionsCount(count: Int) -> String {
         return count <= 1 ? "\(count) contribution" : "\(count) contributions"
     }
+
     private func createImage() -> Image {
         if viewModel.viewMode {
             return Image(systemName: "arrowshape.turn.up.backward.circle")

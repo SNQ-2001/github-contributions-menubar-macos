@@ -5,8 +5,8 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import SwiftUI
 import Foundation
+import SwiftUI
 
 struct UXView: View {
     @ObservedObject var viewModel: ContributionsViewModel
@@ -31,12 +31,12 @@ struct UXView: View {
 }
 
 struct IndicatorView: NSViewRepresentable {
-    func makeNSView(context: Context) -> NSProgressIndicator {
+    func makeNSView(context _: Context) -> NSProgressIndicator {
         let indicator = NSProgressIndicator()
         indicator.style = .spinning
         indicator.startAnimation(true)
         return indicator
     }
-    func updateNSView(_ nsView: NSProgressIndicator, context: Context) {
-    }
+
+    func updateNSView(_: NSProgressIndicator, context _: Context) {}
 }

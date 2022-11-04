@@ -5,11 +5,10 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import SwiftUI
 import Combine
+import SwiftUI
 
 final class ContributionsViewModel: ObservableObject {
-
     struct Contributions {
         var levels: [[GitHub.Contribution.Level]] = []
         var count: Int = .zero
@@ -33,20 +32,20 @@ final class ContributionsViewModel: ObservableObject {
     }
 
     func updateContributions() {
-        self.contributions = .init()
-        self.username = UserDefaults.standard.string(forKey: "username") ?? ""
-        self.thema = UserDefaults.standard.integer(forKey: "thema")
+        contributions = .init()
+        username = UserDefaults.standard.string(forKey: "username") ?? ""
+        thema = UserDefaults.standard.integer(forKey: "thema")
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.getContributions()
         }
     }
 
     func setUsename() {
-        UserDefaults.standard.set(self.username, forKey: "username")
+        UserDefaults.standard.set(username, forKey: "username")
     }
 
     func setThema() {
-        UserDefaults.standard.set(self.thema, forKey: "thema")
+        UserDefaults.standard.set(thema, forKey: "thema")
     }
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {

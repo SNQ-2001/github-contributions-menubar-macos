@@ -290,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=/opt/homebrew/bin:$PATH\n\nif which mint >/dev/null; then\n    # SwiftGen\n    xcrun --sdk macosx mint run swiftgen\n    # SwiftLint\n    xcrun --sdk macosx mint run swiftlint\n    # LicensePlist\n    xcrun --sdk macosx mint run mono0926/LicensePlist --output-path $PROJECT_NAME/Resource/Settings.bundle\nelse \n    echo 'warning: mint not installed.'\nfi\n";
+			shellScript = "export PATH=/opt/homebrew/bin:$PATH\n\nif which mint >/dev/null; then\n    # SwiftGen\n    xcrun --sdk macosx mint run swiftgen\n    # SwiftLint\n    xcrun --sdk macosx mint run swiftlint\n    # SwiftFormat\n    xcrun --sdk macosx mint run swiftformat .\n    # LicensePlist\n    xcrun --sdk macosx mint run mono0926/LicensePlist --output-path $PROJECT_NAME/Resource/Settings.bundle\nelse \n    echo 'warning: mint not installed.'\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -448,7 +448,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 109;
+				CURRENT_PROJECT_VERSION = 110;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
@@ -483,7 +483,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 109;
+				CURRENT_PROJECT_VERSION = 110;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;

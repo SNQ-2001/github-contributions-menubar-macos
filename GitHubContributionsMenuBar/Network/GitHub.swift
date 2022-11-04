@@ -5,12 +5,11 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import Foundation
 import Combine
+import Foundation
 import SwiftSoup
 
-public struct GitHub {
-
+public enum GitHub {
     // MARK: - Private Properties
 
     private static let dateFormatter: DateFormatter = {
