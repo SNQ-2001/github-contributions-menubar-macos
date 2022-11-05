@@ -9,7 +9,6 @@ import Foundation
 
 public extension GitHub {
     struct Contribution {
-
         /// The date when the contributions ocurred.
         let date: Date
 

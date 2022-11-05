@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+
 // MARK: - Properties
 
 public extension Color {
-
     // MARK: - Tile Border
 
     static var tileBorder: Color = Asset.tileBorder.swiftUIColor

@@ -17,6 +17,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .greenLevel4
         }
     }
+
     var blue: Color {
         switch self {
         case .zero: return .emptyTile
@@ -26,6 +27,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .blueLevel4
         }
     }
+
     var red: Color {
         switch self {
         case .zero: return .emptyTile
@@ -35,6 +37,7 @@ extension GitHub.Contribution.Level {
         case .fourth: return .redLevel4
         }
     }
+
     var purple: Color {
         switch self {
         case .zero: return .emptyTile
