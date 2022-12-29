@@ -15,9 +15,10 @@ final class ContributionsViewModel: ObservableObject {
     }
 
     @Published var contributions: Contributions = .init()
-    @Published var username: String = ""
-    @Published var thema: Int = 0
     @Published var viewMode: Bool = false
+
+    @AppStorage("username") var username: String = ""
+    @AppStorage("thema") var thema: Int = 0
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 
@@ -38,14 +39,6 @@ final class ContributionsViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.getContributions()
         }
-    }
-
-    func setUsename() {
-        UserDefaults.standard.set(username, forKey: "username")
-    }
-
-    func setThema() {
-        UserDefaults.standard.set(thema, forKey: "thema")
     }
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {

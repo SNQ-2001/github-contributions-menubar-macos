@@ -290,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=/opt/homebrew/bin:$PATH\n\nif which mint >/dev/null; then\n    # SwiftGen\n    xcrun --sdk macosx mint run swiftgen\n    # SwiftLint\n    xcrun --sdk macosx mint run swiftlint\n    # SwiftFormat\n    xcrun --sdk macosx mint run swiftformat .\n    # LicensePlist\n    xcrun --sdk macosx mint run mono0926/LicensePlist --output-path $PROJECT_NAME/Resource/Settings.bundle\nelse \n    echo 'warning: mint not installed.'\nfi\n";
+			shellScript = "export PATH=/opt/homebrew/bin:$PATH\n\nif which mint >/dev/null; then\n    # SwiftGen\n    xcrun --sdk macosx mint run swiftgen\n    # SwiftLint\n    xcrun --sdk macosx mint run swiftlint\n    # SwiftFormat\n    xcrun --sdk macosx mint run swiftformat GitHubContributionsMenuBar\n    # LicensePlist\n    xcrun --sdk macosx mint run mono0926/LicensePlist --output-path $PROJECT_NAME/Resource/Settings.bundle\nelse \n    echo 'warning: mint not installed.'\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -18,9 +18,9 @@ public enum GitHub {
         return dateFormatter
     }()
 
-    // MARK: - Public Methods
+    // MARK: - internal Methods
 
-    public static func getContributions(for username: String, queue: DispatchQueue) -> Future<[Contribution], Error> {
+    static func getContributions(for username: String, queue: DispatchQueue) -> Future<[Contribution], Error> {
         Future { promise in
             queue.async {
                 do {
