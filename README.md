@@ -1,4 +1,20 @@
-This project was created in reference to the [GitHub Contribution Graphs for iOS](https://github.com/SNQ-2001/github-contributions-ios) project.
+<p align="center">
+  <a href="https://github.com/SNQ-2001/github-contributions-menubar-macos/issues">
+    <img src="https://img.shields.io/github/issues/SNQ-2001/github-contributions-menubar-macos"/>
+  </a>
+  <a href="https://github.com/SNQ-2001/github-contributions-menubar-macos/network/members">
+    <img src="https://img.shields.io/github/forks/SNQ-2001/github-contributions-menubar-macos"/>
+  </a>
+  <a href="https://github.com/SNQ-2001/github-contributions-menubar-macos/stargazers">
+    <img src="https://img.shields.io/github/stars/SNQ-2001/github-contributions-menubar-macos"/>
+  </a>
+  <a href="https://github.com/SNQ-2001/github-contributions-menubar-macos/">
+    <img src="https://img.shields.io/github/languages/top/SNQ-2001/github-contributions-menubar-macos"/>
+  </a>
+  <a href="https://github.com/SNQ-2001/github-contributions-menubar-macos/">
+    <img src="https://img.shields.io/github/license/SNQ-2001/github-contributions-menubar-macos"/>
+  </a>
+</p>
 
 <img align="right" src=".assets/app-icon-rounded.png" width="50" alt="Contribution Graphs for GitHub">
 
@@ -10,6 +26,8 @@ Quickly check in on your GitHub contributions from your Menu Bar!
 
 - Type your GitHub username
 - Choose between different color themes
+
+This project was created in reference to the [GitHub Contribution Graphs for iOS](https://github.com/SNQ-2001/github-contributions-ios) project.
 
 ## Screenshots
 
