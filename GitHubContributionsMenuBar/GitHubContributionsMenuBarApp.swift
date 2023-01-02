@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct GitHubContributionsMenuBarApp: App {
-    @ObservedObject var viewModel = ContributionsViewModel()
+    @StateObject var viewModel = ContributionsViewModel()
     var body: some Scene {
         MenuBarExtra {
             ContentView(viewModel: viewModel)

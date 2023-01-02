@@ -27,9 +27,6 @@ struct Thema: View {
                     .tag(3)
             }
             .labelsHidden()
-            .onChange(of: viewModel.thema) { _ in
-                viewModel.setThema()
-            }
         }
     }
 }

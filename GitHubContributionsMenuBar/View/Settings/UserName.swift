@@ -26,9 +26,6 @@ struct UserName: View {
                 .background(focusState ? .quaternary : .tertiary)
                 .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 0.5).cornerRadius(6))
                 .cornerRadius(6)
-                .onChange(of: viewModel.username) { _ in
-                    viewModel.setUsename()
-                }
         }
     }
 }
