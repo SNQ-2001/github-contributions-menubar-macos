@@ -13,9 +13,6 @@ struct ContentView: View {
         ContributionsView(viewModel: viewModel)
             .frame(width: 265, height: 115)
             .padding(.all, 12)
-            .onAppear {
-                viewModel.updateContributions()
-            }
             .onChange(of: viewModel.viewMode) { _ in
                 viewModel.updateContributions()
             }

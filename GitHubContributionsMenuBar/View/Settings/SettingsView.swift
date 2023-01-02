@@ -5,7 +5,6 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import SkeletonUI
 import SwiftUI
 
 struct SettingsView: View {

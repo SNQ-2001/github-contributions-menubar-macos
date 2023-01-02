@@ -68,7 +68,7 @@ public struct ContributionsView: View {
                             hover1 = hovering
                         }
                         .onTapGesture {
-                            NSApp.terminate(self)
+                            NSApplication.shared.terminate(nil)
                         }
                         .padding(.trailing, 3)
                 } else {

@@ -23,10 +23,10 @@
 		1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B72822EC8F00ABFED2 /* Contribution.swift */; };
 		1C6694BA2822ECA400ABFED2 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B92822ECA400ABFED2 /* GitHub.swift */; };
 		1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BC2822ECC500ABFED2 /* SwiftSoup */; };
-		1C6694C02822ECE100ABFED2 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BF2822ECE100ABFED2 /* SkeletonUI */; };
 		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1C921BF22909399300BA091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C921BF12909399300BA091E /* README.md */; };
 		1CA831B9290950D900FC6AB4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CA831B8290950D900FC6AB4 /* icon.icns */; };
+		1CA8E632295DC92600F3D623 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA8E631295DC92600F3D623 /* SkeletonUI */; };
 		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
 		1CAFD68F282417F000C9A576 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68E282417F000C9A576 /* UserName.swift */; };
@@ -69,7 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */,
-				1C6694C02822ECE100ABFED2 /* SkeletonUI in Frameworks */,
+				1CA8E632295DC92600F3D623 /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 			name = GitHubContributionsMenuBar;
 			packageProductDependencies = (
 				1C6694BC2822ECC500ABFED2 /* SwiftSoup */,
-				1C6694BF2822ECE100ABFED2 /* SkeletonUI */,
+				1CA8E631295DC92600F3D623 /* SkeletonUI */,
 			);
 			productName = GitHubContributionsMenuBar;
 			productReference = 1C66948E2822EA3800ABFED2 /* Contributions.app */;
@@ -247,7 +247,7 @@
 			mainGroup = 1C6694852822EA3800ABFED2;
 			packageReferences = (
 				1C6694BB2822ECC500ABFED2 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-				1C6694BE2822ECE100ABFED2 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
+				1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 			);
 			productRefGroup = 1C66948F2822EA3800ABFED2 /* Products */;
 			projectDirPath = "";
@@ -540,7 +540,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		1C6694BE2822ECE100ABFED2 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+		1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CSolanaM/SkeletonUI";
 			requirement = {
@@ -556,9 +556,9 @@
 			package = 1C6694BB2822ECC500ABFED2 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
 		};
-		1C6694BF2822ECE100ABFED2 /* SkeletonUI */ = {
+		1CA8E631295DC92600F3D623 /* SkeletonUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1C6694BE2822ECE100ABFED2 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
+			package = 1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
 			productName = SkeletonUI;
 		};
 /* End XCSwiftPackageProductDependency section */

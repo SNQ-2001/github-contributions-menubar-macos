@@ -22,6 +22,17 @@ final class ContributionsViewModel: ObservableObject {
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 
+    private var cancellable = Set<AnyCancellable>()
+
+    init() {
+        NotificationCenter.default.publisher(for: NSWindow.didBecomeKeyNotification)
+            .sink { [weak self] _ in
+                guard let self else { return }
+                self.updateContributions()
+            }
+            .store(in: &cancellable)
+    }
+
     func getContributions() {
         guard contributions.levels.isEmpty else { return }
         GitHub.getContributions(for: username, queue: queue)
@@ -34,8 +45,6 @@ final class ContributionsViewModel: ObservableObject {
 
     func updateContributions() {
         contributions = .init()
-        username = UserDefaults.standard.string(forKey: "username") ?? ""
-        thema = UserDefaults.standard.integer(forKey: "thema")
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.getContributions()
         }
