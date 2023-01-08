@@ -115,8 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1C921BF12909399300BA091E /* README.md */,
-				1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */,
-				1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */,
+				1CBC3A2D296AE60E00E1EDB5 /* Application */,
 				1C6694A02822EA5800ABFED2 /* View */,
 				1C6694B62822EC7200ABFED2 /* Network */,
 				1C6694A42822EAED00ABFED2 /* ViewModel */,
@@ -194,6 +193,15 @@
 				1C6694AE2822EBC300ABFED2 /* GridStack.swift */,
 			);
 			path = Contributions;
+			sourceTree = "<group>";
+		};
+		1CBC3A2D296AE60E00E1EDB5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */,
+				1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/GitHubContributionsMenuBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/Application/GitHubContributionsMenuBar.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -479,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/GitHubContributionsMenuBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GitHubContributionsMenuBar/Application/GitHubContributionsMenuBar.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
