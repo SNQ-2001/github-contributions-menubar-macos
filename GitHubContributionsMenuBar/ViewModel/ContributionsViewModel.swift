@@ -16,6 +16,8 @@ final class ContributionsViewModel: ObservableObject {
 
     @Published var contributions: Contributions = .init()
     @Published var viewMode: Bool = false
+    @Published var hoverSwitchingButton: Bool = false
+    @Published var hoverQuitButton: Bool = false
 
     @AppStorage("username") var username: String = ""
     @AppStorage("thema") var thema: ThemaColor = .init(rawValue: 0) ?? .green
