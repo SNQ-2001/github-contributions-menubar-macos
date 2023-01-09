@@ -29,9 +29,6 @@
 		1CA8E632295DC92600F3D623 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA8E631295DC92600F3D623 /* SkeletonUI */; };
 		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
-		1CAFD68F282417F000C9A576 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68E282417F000C9A576 /* UserName.swift */; };
-		1CAFD6912824181200C9A576 /* Thema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6902824181200C9A576 /* Thema.swift */; };
-		1CAFD6932824186B00C9A576 /* OpenSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6922824186B00C9A576 /* OpenSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +55,6 @@
 		1CA831B8290950D900FC6AB4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		1CAFD6852823D81100C9A576 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelStyle.swift; sourceTree = "<group>"; };
-		1CAFD68E282417F000C9A576 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
-		1CAFD6902824181200C9A576 /* Thema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thema.swift; sourceTree = "<group>"; };
-		1CAFD6922824186B00C9A576 /* OpenSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,9 +173,6 @@
 			children = (
 				1CAFD6852823D81100C9A576 /* SettingsView.swift */,
 				1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */,
-				1CAFD68E282417F000C9A576 /* UserName.swift */,
-				1CAFD6902824181200C9A576 /* Thema.swift */,
-				1CAFD6922824186B00C9A576 /* OpenSource.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -309,12 +300,9 @@
 			files = (
 				1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */,
 				1C6694A92822EB4F00ABFED2 /* Array+.swift in Sources */,
-				1CAFD6912824181200C9A576 /* Thema.swift in Sources */,
 				1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */,
-				1CAFD68F282417F000C9A576 /* UserName.swift in Sources */,
 				1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */,
 				1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */,
-				1CAFD6932824186B00C9A576 /* OpenSource.swift in Sources */,
 				1C1787542909291900BFEB6E /* Assets.swift in Sources */,
 				1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */,
 				1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */,

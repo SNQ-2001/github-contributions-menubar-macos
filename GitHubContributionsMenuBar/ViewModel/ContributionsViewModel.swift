@@ -20,6 +20,8 @@ final class ContributionsViewModel: ObservableObject {
     @AppStorage("username") var username: String = ""
     @AppStorage("thema") var thema: Int = 0
 
+    let themaColor = ["Green", "Blue", "Red", "Purple"]
+
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 
     private var cancellable = Set<AnyCancellable>()
