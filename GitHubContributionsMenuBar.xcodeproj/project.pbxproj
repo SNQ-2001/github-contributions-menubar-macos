@@ -26,7 +26,6 @@
 		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1C921BF22909399300BA091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C921BF12909399300BA091E /* README.md */; };
 		1CA831B9290950D900FC6AB4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CA831B8290950D900FC6AB4 /* icon.icns */; };
-		1CA8E632295DC92600F3D623 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1CA8E631295DC92600F3D623 /* SkeletonUI */; };
 		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */,
-				1CA8E632295DC92600F3D623 /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +212,6 @@
 			name = GitHubContributionsMenuBar;
 			packageProductDependencies = (
 				1C6694BC2822ECC500ABFED2 /* SwiftSoup */,
-				1CA8E631295DC92600F3D623 /* SkeletonUI */,
 			);
 			productName = GitHubContributionsMenuBar;
 			productReference = 1C66948E2822EA3800ABFED2 /* Contributions.app */;
@@ -246,7 +243,6 @@
 			mainGroup = 1C6694852822EA3800ABFED2;
 			packageReferences = (
 				1C6694BB2822ECC500ABFED2 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-				1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 			);
 			productRefGroup = 1C66948F2822EA3800ABFED2 /* Products */;
 			projectDirPath = "";
@@ -536,14 +532,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CSolanaM/SkeletonUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -551,11 +539,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1C6694BB2822ECC500ABFED2 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
-		};
-		1CA8E631295DC92600F3D623 /* SkeletonUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1CA8E630295DC92600F3D623 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
-			productName = SkeletonUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

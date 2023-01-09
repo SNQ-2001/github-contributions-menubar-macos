@@ -5,7 +5,6 @@
 //  Created by 宮本大新 on 2022/05/05.
 //
 
-import SkeletonUI
 import SwiftUI
 
 public struct ContributionsView: View {
@@ -15,41 +14,27 @@ public struct ContributionsView: View {
     @Environment(\.colorScheme) var colorScheme
     public var body: some View {
         VStack {
-            HStack {
-                HStack(spacing: 6) {
-                    createImage()
-                        .resizable()
-                        .frame(width: viewModel.viewMode ? 10 : 10, height: viewModel.viewMode ? 10 : 10)
-                        .unredacted()
-                        .background(
-                            Color(
-                                red: colorScheme == .dark ? 1 : 0,
-                                green: colorScheme == .dark ? 1 : 0,
-                                blue: colorScheme == .dark ? 1 : 0
-                            )
+            HStack(spacing: 6) {
+                createImage()
+                    .resizable()
+                    .frame(width: 10, height: 10)
+                    .unredacted()
+                    .background(
+                        Color(colorScheme == .dark ? .white : .black)
                             .opacity(hover ? 0.3 : 0.0)
                             .frame(width: 15, height: 15)
                             .cornerRadius(10)
-                        )
-                        .onHover { hovering in
-                            hover = hovering
+                    )
+                    .onHover { hovering in
+                        hover = hovering
+                    }
+                    .onTapGesture {
+                        withAnimation {
+                            viewModel.viewMode.toggle()
                         }
-                        .onTapGesture {
-                            withAnimation {
-                                viewModel.viewMode.toggle()
-                            }
-                        }
-                    Text(viewModel.username)
-                        .skeleton(with: color().isEmpty)
-                        .shape(type: .rounded(.radius(5, style: .continuous)))
-                        .appearance(type: .solid(
-                            color: .white.opacity(0.1),
-                            background: .gray.opacity(0.1)
-                        ))
-                        .multiline(lines: 1, scales: [1: 0.5])
-                        .animation(type: .pulse())
-                        .frame(height: 12)
-                }
+                    }
+                Text(viewModel.username)
+                    .frame(height: 12)
                 Spacer()
                 if viewModel.viewMode {
                     Text("Quit")
@@ -73,18 +58,11 @@ public struct ContributionsView: View {
                         .padding(.trailing, 3)
                 } else {
                     Text(createContributionsCount(count: viewModel.contributions.count))
-                        .skeleton(with: skeletonFlag())
-                        .shape(type: .rounded(.radius(5, style: .continuous)))
-                        .appearance(type: .solid(
-                            color: .white.opacity(0.1),
-                            background: .gray.opacity(0.1)
-                        ))
-                        .multiline(lines: 1, scales: [1: 0.5])
-                        .animation(type: .pulse())
                         .frame(height: 12)
                 }
             }
             .captionStyle()
+
             if viewModel.viewMode {
                 SettingsView(viewModel: viewModel)
             } else {

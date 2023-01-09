@@ -9,8 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject var viewModel: ContributionsViewModel
+
     @FocusState var focusState: Bool
-    var openSourceURL: URL {
+
+    private var openSourceURL: URL {
         URL(string: "https://github.com/SNQ-2001/github-contributions-menubar-macos")!
     }
 
