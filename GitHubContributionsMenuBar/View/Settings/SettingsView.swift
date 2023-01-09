@@ -21,10 +21,7 @@ struct SettingsView: View {
             }
         }
         GroupBox {
-            HStack {
-                OpenSource()
-                Spacer()
-            }
+            OpenSource()
         }
         .onTapGesture {
             NSWorkspace.shared.open(openSourceURL)

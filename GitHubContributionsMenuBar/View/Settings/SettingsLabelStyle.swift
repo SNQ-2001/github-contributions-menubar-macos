@@ -15,3 +15,9 @@ struct SettingsLabelStyle: LabelStyle {
         }
     }
 }
+
+extension LabelStyle where Self == SettingsLabelStyle {
+    static var settings: SettingsLabelStyle {
+        .init()
+    }
+}

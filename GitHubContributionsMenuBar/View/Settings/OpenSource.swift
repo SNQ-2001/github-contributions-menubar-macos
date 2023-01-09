@@ -30,7 +30,8 @@ struct OpenSource: View {
                 .foregroundColor(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
         }
-        .labelStyle(SettingsLabelStyle())
+        .labelStyle(.settings)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, 2.5)
         .padding(.leading, 4.5)
         .lineLimit(1)
