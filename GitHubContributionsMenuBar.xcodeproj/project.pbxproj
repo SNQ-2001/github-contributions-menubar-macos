@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078204296C3D0D000D42B4 /* ThemaColor.swift */; };
 		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
 		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
 		1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C17875529092A3800BFEB6E /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C078204296C3D0D000D42B4 /* ThemaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemaColor.swift; sourceTree = "<group>"; };
 		1C17874F2909248700BFEB6E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1C1787532909291900BFEB6E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		1C17875529092A3800BFEB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C078202296C3C93000D42B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C078203296C3CEF000D42B4 /* Entity */,
+				1C6694B62822EC7200ABFED2 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C078203296C3CEF000D42B4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1C078204296C3D0D000D42B4 /* ThemaColor.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		1C17874C290921ED00BFEB6E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +128,7 @@
 				1C921BF12909399300BA091E /* README.md */,
 				1CBC3A2D296AE60E00E1EDB5 /* Application */,
 				1C6694A02822EA5800ABFED2 /* View */,
-				1C6694B62822EC7200ABFED2 /* Network */,
+				1C078202296C3C93000D42B4 /* Model */,
 				1C6694A42822EAED00ABFED2 /* ViewModel */,
 				1C17874D290922D200BFEB6E /* Generated */,
 				1C6694A72822EB3200ABFED2 /* Extension */,
@@ -307,6 +326,7 @@
 				1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */,
 				1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */,
 				1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */,
+				1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */,
 				1C6694B52822EC2700ABFED2 /* View+.swift in Sources */,
 				1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */,
 			);

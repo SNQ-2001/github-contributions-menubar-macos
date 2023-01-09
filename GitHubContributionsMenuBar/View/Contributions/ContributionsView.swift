@@ -40,14 +40,10 @@ public struct ContributionsView: View {
                     Text("Quit")
                         .frame(height: 10)
                         .background(
-                            Color(
-                                red: colorScheme == .dark ? 1 : 0,
-                                green: colorScheme == .dark ? 1 : 0,
-                                blue: colorScheme == .dark ? 1 : 0
-                            )
-                            .opacity(hover1 ? 0.3 : 0.0)
-                            .frame(width: 30, height: 15)
-                            .cornerRadius(5)
+                            Color(colorScheme == .dark ? .white : .black)
+                                .opacity(hover1 ? 0.3 : 0.0)
+                                .frame(width: 30, height: 15)
+                                .cornerRadius(5)
                         )
                         .onHover { hovering in
                             hover1 = hovering
@@ -82,16 +78,15 @@ public struct ContributionsView: View {
     }
 
     private func color() -> [[Color]] {
-        if viewModel.thema == 0 {
+        switch viewModel.thema {
+        case .green:
             return viewModel.contributions.levels.map { $0.map(\.green) }
-        } else if viewModel.thema == 1 {
+        case .blue:
             return viewModel.contributions.levels.map { $0.map(\.blue) }
-        } else if viewModel.thema == 2 {
+        case .red:
             return viewModel.contributions.levels.map { $0.map(\.red) }
-        } else if viewModel.thema == 3 {
+        case .purple:
             return viewModel.contributions.levels.map { $0.map(\.purple) }
-        } else {
-            return viewModel.contributions.levels.map { $0.map(\.green) }
         }
     }
 

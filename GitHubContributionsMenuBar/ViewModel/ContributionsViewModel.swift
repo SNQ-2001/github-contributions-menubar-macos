@@ -18,9 +18,7 @@ final class ContributionsViewModel: ObservableObject {
     @Published var viewMode: Bool = false
 
     @AppStorage("username") var username: String = ""
-    @AppStorage("thema") var thema: Int = 0
-
-    let themaColor = ["Green", "Blue", "Red", "Purple"]
+    @AppStorage("thema") var thema: ThemaColor = .init(rawValue: 0) ?? .green
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 

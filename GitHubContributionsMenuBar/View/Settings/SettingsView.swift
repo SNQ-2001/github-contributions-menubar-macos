@@ -60,8 +60,8 @@ extension SettingsView {
                 .padding(.leading, 2)
                 .captionStyle()
             Picker("", selection: $viewModel.thema) {
-                ForEach(0 ..< viewModel.themaColor.count, id: \.self) { index in
-                    Text(viewModel.themaColor[index]).tag(index)
+                ForEach(0 ..< ThemaColor.allCases.count, id: \.self) { index in
+                    Text(ThemaColor.allCases[index].colorName).tag(ThemaColor.allCases[index])
                 }
             }
             .labelsHidden()
