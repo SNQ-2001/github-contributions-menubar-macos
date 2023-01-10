@@ -9,16 +9,13 @@ import Combine
 import SwiftUI
 
 final class ContributionsViewModel: ObservableObject {
-    struct Contributions {
-        var levels: [[GitHub.Contribution.Level]] = []
-        var count: Int = .zero
-    }
-
     @Published var contributions: Contributions = .init()
-    @Published var viewMode: Bool = false
+    @Published var viewType: ViewType = .contributions
+    @Published var hoverSwitchingButton: Bool = false
+    @Published var hoverQuitButton: Bool = false
 
     @AppStorage("username") var username: String = ""
-    @AppStorage("thema") var thema: Int = 0
+    @AppStorage("thema") var thema: ThemaColor = .init(rawValue: 0) ?? .green
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
 
@@ -35,19 +32,31 @@ final class ContributionsViewModel: ObservableObject {
 
     func getContributions() {
         guard contributions.levels.isEmpty else { return }
+        withAnimation { self.viewType = .progress }
+        if username == "" { viewType = .emptyUserName; return }
         GitHub.getContributions(for: username, queue: queue)
             .subscribe(on: queue)
-            .replaceError(with: [])
             .map(Self.mapContributions)
             .receive(on: DispatchQueue.main)
-            .assign(to: &$contributions)
+            .sink { [weak self] completion in
+                guard let self else { return }
+                switch completion {
+                case .finished:
+                    return
+                case let .failure(error):
+                    withAnimation { self.viewType = .error(error) }
+                }
+            } receiveValue: { [weak self] contributions in
+                guard let self else { return }
+                self.contributions = contributions
+                withAnimation { self.viewType = .contributions }
+            }
+            .store(in: &cancellable)
     }
 
     func updateContributions() {
         contributions = .init()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.getContributions()
-        }
+        getContributions()
     }
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {

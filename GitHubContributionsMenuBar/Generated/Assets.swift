@@ -128,7 +128,7 @@ internal struct ImageAsset {
         #if os(iOS) || os(tvOS)
             let image = Image(named: name, in: bundle, compatibleWith: nil)
         #elseif os(macOS)
-            let name = NSImage.Name(self.name)
+            let name = NSImage.Name(name)
             let image = (bundle == .main) ? NSImage(named: name) : bundle.image(forResource: name)
         #elseif os(watchOS)
             let image = Image(named: name)
