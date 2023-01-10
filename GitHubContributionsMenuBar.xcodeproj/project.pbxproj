@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078204296C3D0D000D42B4 /* ThemaColor.swift */; };
+		1C078207296C6943000D42B4 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078206296C6943000D42B4 /* ViewType.swift */; };
+		1C078209296C6C0C000D42B4 /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078208296C6C0C000D42B4 /* Contributions.swift */; };
 		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
 		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
 		1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C17875529092A3800BFEB6E /* Assets.xcassets */; };
@@ -19,7 +21,6 @@
 		1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AA2822EB6600ABFED2 /* Color+.swift */; };
 		1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */; };
 		1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AE2822EBC300ABFED2 /* GridStack.swift */; };
-		1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B02822EBD800ABFED2 /* UXView.swift */; };
 		1C6694B52822EC2700ABFED2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B42822EC2700ABFED2 /* View+.swift */; };
 		1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B72822EC8F00ABFED2 /* Contribution.swift */; };
 		1C6694BA2822ECA400ABFED2 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694B92822ECA400ABFED2 /* GitHub.swift */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		1C078204296C3D0D000D42B4 /* ThemaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemaColor.swift; sourceTree = "<group>"; };
+		1C078206296C6943000D42B4 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		1C078208296C6C0C000D42B4 /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
 		1C17874F2909248700BFEB6E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1C1787532909291900BFEB6E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		1C17875529092A3800BFEB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		1C6694AA2822EB6600ABFED2 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsView.swift; sourceTree = "<group>"; };
 		1C6694AE2822EBC300ABFED2 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
-		1C6694B02822EBD800ABFED2 /* UXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXView.swift; sourceTree = "<group>"; };
 		1C6694B42822EC2700ABFED2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		1C6694B72822EC8F00ABFED2 /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
 		1C6694B92822ECA400ABFED2 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				1C078204296C3D0D000D42B4 /* ThemaColor.swift */,
+				1C078206296C6943000D42B4 /* ViewType.swift */,
+				1C078208296C6C0C000D42B4 /* Contributions.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -150,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1C6694A22822EAD900ABFED2 /* ContentView.swift */,
-				1C6694B02822EBD800ABFED2 /* UXView.swift */,
 				1CAFD6942824193200C9A576 /* Contributions */,
 				1CAFD689282411D700C9A576 /* Settings */,
 			);
@@ -319,16 +322,17 @@
 				1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */,
 				1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */,
 				1C1787542909291900BFEB6E /* Assets.swift in Sources */,
-				1C6694B12822EBD800ABFED2 /* UXView.swift in Sources */,
 				1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */,
 				1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */,
 				1C6694BA2822ECA400ABFED2 /* GitHub.swift in Sources */,
 				1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */,
 				1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */,
 				1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */,
+				1C078209296C6C0C000D42B4 /* Contributions.swift in Sources */,
 				1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */,
 				1C6694B52822EC2700ABFED2 /* View+.swift in Sources */,
 				1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */,
+				1C078207296C6943000D42B4 /* ViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +464,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 111;
+				CURRENT_PROJECT_VERSION = 112;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
@@ -477,7 +481,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -495,7 +499,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 111;
+				CURRENT_PROJECT_VERSION = 112;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
@@ -512,7 +516,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;

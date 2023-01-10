@@ -9,54 +9,58 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel: ContributionsViewModel
-    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         VStack(spacing: 8) {
-            toolBar
-
-            if viewModel.viewMode {
-                settings
-            } else {
-                contributions
+            switch viewModel.viewType {
+            case .contributions:
+                toolBar()
+                contributionsView()
+            case .settings:
+                toolBar()
+                settingsView()
+            case .emptyUserName:
+                emptyUserNameLabel()
+            case let .error(error):
+                errorLabel(error: error)
+            case .progress:
+                progressView()
             }
         }
         .frame(width: 265, height: 115)
         .padding(.all, 12)
-        .onChange(of: viewModel.viewMode) { _ in
-            viewModel.updateContributions()
-        }
     }
 }
 
 extension ContentView {
-    private var contributions: some View {
+    private func contributionsView() -> some View {
         ContributionsView(viewModel: viewModel)
     }
 
-    private var settings: some View {
+    private func settingsView() -> some View {
         SettingsView(viewModel: viewModel)
     }
 
-    private var toolBar: some View {
+    private func toolBar() -> some View {
         HStack(spacing: 6) {
-            switchingButton
+            switchingButton()
 
             Text(viewModel.username)
                 .frame(height: 12)
 
             Spacer()
 
-            if viewModel.viewMode {
-                quitButton
-            } else {
-                contributionsCountLabel
+            switch viewModel.viewType {
+            case .contributions:
+                contributionsCountLabel()
+            case .settings, .emptyUserName, .error, .progress:
+                quitButton()
             }
         }
         .captionStyle()
     }
 
-    private var switchingButton: some View {
-        Image(systemName: viewModel.viewMode ? "arrowshape.turn.up.backward.circle" : "gearshape")
+    private func switchingButton() -> some View {
+        Image(systemName: viewModel.viewType == .settings ? "arrowshape.turn.up.backward.circle" : "gearshape")
             .resizable()
             .frame(width: 10, height: 10)
             .unredacted()
@@ -70,13 +74,21 @@ extension ContentView {
                 viewModel.hoverSwitchingButton = hovering
             }
             .onTapGesture {
-                withAnimation {
-                    viewModel.viewMode.toggle()
+                switch viewModel.viewType {
+                case .contributions, .emptyUserName:
+                    withAnimation { viewModel.viewType = .settings }
+                case .settings:
+                    if !viewModel.username.isEmpty {
+                        withAnimation { viewModel.viewType = .contributions }
+                        viewModel.updateContributions()
+                    }
+                case .progress, .error:
+                    return
                 }
             }
     }
 
-    private var quitButton: some View {
+    private func quitButton() -> some View {
         Text("Quit")
             .frame(height: 10)
             .background(
@@ -94,9 +106,37 @@ extension ContentView {
             .padding(.trailing, 3)
     }
 
-    private var contributionsCountLabel: some View {
+    private func contributionsCountLabel() -> some View {
         let count = viewModel.contributions.count
         return Text("\(count <= 1 ? "\(count) contribution" : "\(count) contributions")")
             .frame(height: 12)
+    }
+
+    private func errorLabel(error: Error) -> some View {
+        Text("\(Image(systemName: "exclamationmark.triangle")) \(error.localizedDescription)")
+            .fontWeight(.medium)
+            .foregroundColor(.blue)
+            .frame(maxHeight: .infinity)
+            .onTapGesture {
+                viewModel.updateContributions()
+            }
+    }
+
+    private func emptyUserNameLabel() -> some View {
+        Text("\(Image(systemName: "info.circle")) Set a GitHub username")
+            .fontWeight(.medium)
+            .foregroundColor(.blue)
+            .frame(maxHeight: .infinity)
+            .onTapGesture {
+                withAnimation { viewModel.viewType = .settings }
+            }
+    }
+
+    private func progressView() -> some View {
+        ProgressView()
+            .progressViewStyle(.circular)
+            .scaleEffect(1.3)
+            .frame(width: 1.3 * 20, height: 1.3 * 20)
+            .frame(maxHeight: .infinity)
     }
 }

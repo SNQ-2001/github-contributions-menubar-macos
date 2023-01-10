@@ -30,7 +30,6 @@ public enum GitHub {
                     let contributions = try document.select("rect").compactMap(contribution)
                     promise(.success(contributions))
                 } catch {
-                    print("🟥")
                     promise(.failure(error))
                 }
             }
