@@ -1,5 +1,5 @@
 //
-//  ContributionsViewModel.swift
+//  AppViewModel.swift
 //  GitHubContributionsMenuBar
 //
 //  Created by 宮本大新 on 2022/05/05.
@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-final class ContributionsViewModel: ObservableObject {
+final class AppViewModel: ObservableObject {
     @Published var contributions: Contributions = .init()
     @Published var viewType: ViewType = .contributions
     @Published var hoverSwitchingButton: Bool = false

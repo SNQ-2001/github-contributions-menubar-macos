@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @ObservedObject var viewModel: ContributionsViewModel
+    @ObservedObject var viewModel: AppViewModel
 
     @FocusState var focusState: Bool
 

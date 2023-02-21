@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: ContributionsViewModel
+    @ObservedObject var viewModel: AppViewModel
+
+    @ObservedObject var delegate: AppDelegate
+
     var body: some View {
         VStack(spacing: 8) {
             switch viewModel.viewType {
@@ -74,17 +77,7 @@ extension ContentView {
                 viewModel.hoverSwitchingButton = hovering
             }
             .onTapGesture {
-                switch viewModel.viewType {
-                case .contributions, .emptyUserName:
-                    withAnimation { viewModel.viewType = .settings }
-                case .settings:
-                    if !viewModel.username.isEmpty {
-                        withAnimation { viewModel.viewType = .contributions }
-                        viewModel.updateContributions()
-                    }
-                case .progress, .error:
-                    return
-                }
+                delegate.openPreferences()
             }
     }
 
