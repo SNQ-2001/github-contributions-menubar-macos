@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0715A729A4DAF9009E52A2 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1C0715A629A4DAF9009E52A2 /* icon.icns */; };
 		1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078204296C3D0D000D42B4 /* ThemaColor.swift */; };
 		1C078207296C6943000D42B4 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078206296C6943000D42B4 /* ViewState.swift */; };
 		1C078209296C6C0C000D42B4 /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078208296C6C0C000D42B4 /* Contributions.swift */; };
@@ -27,13 +28,13 @@
 		1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BC2822ECC500ABFED2 /* SwiftSoup */; };
 		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1C921BF22909399300BA091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C921BF12909399300BA091E /* README.md */; };
-		1CA831B9290950D900FC6AB4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CA831B8290950D900FC6AB4 /* icon.icns */; };
 		1CAFD6862823D81100C9A576 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* PreferencesView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
 		1CD3F2B329A4BED7002AE086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3F2B229A4BED7002AE086 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0715A629A4DAF9009E52A2 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		1C078204296C3D0D000D42B4 /* ThemaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemaColor.swift; sourceTree = "<group>"; };
 		1C078206296C6943000D42B4 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		1C078208296C6C0C000D42B4 /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		1C6694B92822ECA400ABFED2 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		1C6694C12822EDC300ABFED2 /* Network+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+.swift"; sourceTree = "<group>"; };
 		1C921BF12909399300BA091E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
-		1CA831B8290950D900FC6AB4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		1CAFD6852823D81100C9A576 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelStyle.swift; sourceTree = "<group>"; };
 		1CD3F2B229A4BED7002AE086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				1C17874F2909248700BFEB6E /* Settings.bundle */,
 				1C17875529092A3800BFEB6E /* Assets.xcassets */,
 				1C6694A12822EAB700ABFED2 /* Info.plist */,
-				1CA831B8290950D900FC6AB4 /* icon.icns */,
+				1C0715A629A4DAF9009E52A2 /* icon.icns */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -291,8 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0715A729A4DAF9009E52A2 /* icon.icns in Resources */,
 				1C921BF22909399300BA091E /* README.md in Resources */,
-				1CA831B9290950D900FC6AB4 /* icon.icns in Resources */,
 				1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */,
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
 				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
