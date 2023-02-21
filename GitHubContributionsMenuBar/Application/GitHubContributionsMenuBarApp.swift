@@ -22,7 +22,7 @@ struct GitHubContributionsMenuBarApp: App {
         .menuBarExtraStyle(.window)
 
         Settings {
-            SettingsView(viewModel: viewModel)
+            PreferencesView(viewModel: viewModel)
         }
     }
 }

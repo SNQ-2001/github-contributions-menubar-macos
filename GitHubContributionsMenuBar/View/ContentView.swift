@@ -14,18 +14,16 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            switch viewModel.viewType {
-            case .contributions:
-                toolBar()
+            toolBar()
+
+            switch viewModel.viewState {
+            case .success:
                 contributionsView()
-            case .settings:
-                toolBar()
-                settingsView()
+            case .failure:
+                errorLabel()
             case .emptyUserName:
                 emptyUserNameLabel()
-            case let .error(error):
-                errorLabel(error: error)
-            case .progress:
+            case .inProgress:
                 progressView()
             }
         }
@@ -39,10 +37,6 @@ extension ContentView {
         ContributionsView(viewModel: viewModel)
     }
 
-    private func settingsView() -> some View {
-        SettingsView(viewModel: viewModel)
-    }
-
     private func toolBar() -> some View {
         HStack(spacing: 6) {
             switchingButton()
@@ -52,18 +46,15 @@ extension ContentView {
 
             Spacer()
 
-            switch viewModel.viewType {
-            case .contributions:
-                contributionsCountLabel()
-            case .settings, .emptyUserName, .error, .progress:
-                quitButton()
-            }
+            contributionsCountLabel()
+
+            quitButton()
         }
         .captionStyle()
     }
 
     private func switchingButton() -> some View {
-        Image(systemName: viewModel.viewType == .settings ? "arrowshape.turn.up.backward.circle" : "gearshape")
+        Image(systemName: "gearshape")
             .resizable()
             .frame(width: 10, height: 10)
             .unredacted()
@@ -105,8 +96,8 @@ extension ContentView {
             .frame(height: 12)
     }
 
-    private func errorLabel(error: Error) -> some View {
-        Text("\(Image(systemName: "exclamationmark.triangle")) \(error.localizedDescription)")
+    private func errorLabel() -> some View {
+        Text("\(Image(systemName: "exclamationmark.triangle")) Unknown error")
             .fontWeight(.medium)
             .foregroundColor(.blue)
             .frame(maxHeight: .infinity)
@@ -121,7 +112,7 @@ extension ContentView {
             .foregroundColor(.blue)
             .frame(maxHeight: .infinity)
             .onTapGesture {
-                withAnimation { viewModel.viewType = .settings }
+                delegate.openPreferences()
             }
     }
 

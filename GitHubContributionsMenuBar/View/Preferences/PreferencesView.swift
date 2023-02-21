@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  PreferencesView.swift
 //  GitHubContributionsMenuBar
 //
 //  Created by 宮本大新 on 2022/05/05.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct PreferencesView: View {
     @ObservedObject var viewModel: AppViewModel
 
     @FocusState var focusState: Bool
@@ -17,23 +17,27 @@ struct SettingsView: View {
     }
 
     var body: some View {
-        GroupBox {
-            HStack(spacing: 3) {
-                username
-                thema
+        VStack(spacing: 5) {
+            GroupBox {
+                HStack(spacing: 3) {
+                    username()
+
+                    thema()
+                }
+            }
+
+            GroupBox {
+                openSource()
+            }
+            .onTapGesture {
+                NSWorkspace.shared.open(openSourceURL)
             }
         }
-        GroupBox {
-            openSource
-        }
-        .onTapGesture {
-            NSWorkspace.shared.open(openSourceURL)
-        }
+        .padding(15)
+        .frame(minWidth: 300)
     }
-}
 
-extension SettingsView {
-    private var username: some View {
+    private func username() -> some View {
         VStack(alignment: .leading, spacing: 3) {
             Text("User Name")
                 .font(.system(size: 8))
@@ -52,7 +56,7 @@ extension SettingsView {
         }
     }
 
-    private var thema: some View {
+    private func thema() -> some View {
         VStack(alignment: .leading, spacing: 3) {
             Text("Thema")
                 .font(.system(size: 8))
@@ -68,18 +72,9 @@ extension SettingsView {
         }
     }
 
-    private var openSource: some View {
+    private func openSource() -> some View {
         Label {
-            VStack(alignment: .leading, spacing: 3) {
-                Text("Open Source")
-                    .font(.body)
-                    .foregroundColor(.primary)
-
-                Text("Feel free to contribute!")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
-                    .tint(.secondary)
-            }
+            openSourceLabel()
         } icon: {
             Image(systemName: "swift")
                 .resizable()
@@ -95,5 +90,18 @@ extension SettingsView {
         .padding(.vertical, 2.5)
         .padding(.leading, 4.5)
         .lineLimit(1)
+    }
+
+    private func openSourceLabel() -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text("Open Source")
+                .font(.body)
+                .foregroundColor(.primary)
+
+            Text("Feel free to contribute!")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+                .tint(.secondary)
+        }
     }
 }

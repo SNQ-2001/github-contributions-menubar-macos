@@ -20,7 +20,7 @@ public enum GitHub {
 
     // MARK: - internal Methods
 
-    static func getContributions(for username: String, queue: DispatchQueue) -> Future<[Contribution], Error> {
+    static func fetchContributions(for username: String, queue: DispatchQueue) -> AnyPublisher<[Contribution], Error> {
         Future { promise in
             queue.async {
                 do {
@@ -33,7 +33,7 @@ public enum GitHub {
                     promise(.failure(error))
                 }
             }
-        }
+        }.eraseToAnyPublisher()
     }
 
     // MARK: - Private Methods
@@ -48,11 +48,10 @@ public enum GitHub {
         let dataDate = try htmlElement.attr("data-date")
         let dataLevel = try htmlElement.attr("data-level")
 
-        guard
-            let level = Int(dataLevel),
-            let dataCount,
-            let count = Int(dataCount),
-            let date = dateFormatter.date(from: dataDate)
+        guard let level = Int(dataLevel),
+              let dataCount,
+              let count = Int(dataCount.replacingOccurrences(of: "No", with: "0")),
+              let date = dateFormatter.date(from: dataDate)
         else { return nil }
 
         return Contribution(date: date, count: count, level: Contribution.Level(rawValue: level) ?? .zero)
