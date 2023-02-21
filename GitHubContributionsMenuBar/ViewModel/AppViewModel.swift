@@ -13,7 +13,7 @@ final class AppViewModel: ObservableObject {
 
     @Published var viewState: ViewState = .success
 
-    @Published var hoverSwitchingButton: Bool = false
+    @Published var hoverPreferencesButton: Bool = false
 
     @Published var hoverQuitButton: Bool = false
 

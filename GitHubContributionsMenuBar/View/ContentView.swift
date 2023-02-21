@@ -39,7 +39,7 @@ extension ContentView {
 
     private func toolBar() -> some View {
         HStack(spacing: 6) {
-            switchingButton()
+            preferencesButton()
 
             Text(viewModel.username)
                 .frame(height: 12)
@@ -53,19 +53,19 @@ extension ContentView {
         .captionStyle()
     }
 
-    private func switchingButton() -> some View {
+    private func preferencesButton() -> some View {
         Image(systemName: "gearshape")
             .resizable()
             .frame(width: 10, height: 10)
             .unredacted()
             .background(
                 Color.primary
-                    .opacity(viewModel.hoverSwitchingButton ? 0.3 : 0.0)
+                    .opacity(viewModel.hoverPreferencesButton ? 0.3 : 0.0)
                     .frame(width: 15, height: 15)
                     .cornerRadius(10)
             )
             .onHover { hovering in
-                viewModel.hoverSwitchingButton = hovering
+                viewModel.hoverPreferencesButton = hovering
             }
             .onTapGesture {
                 delegate.openPreferences()
