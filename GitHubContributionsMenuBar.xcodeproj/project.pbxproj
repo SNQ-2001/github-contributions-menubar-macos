@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0715A729A4DAF9009E52A2 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1C0715A629A4DAF9009E52A2 /* icon.icns */; };
 		1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078204296C3D0D000D42B4 /* ThemaColor.swift */; };
-		1C078207296C6943000D42B4 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078206296C6943000D42B4 /* ViewType.swift */; };
+		1C078207296C6943000D42B4 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078206296C6943000D42B4 /* ViewState.swift */; };
 		1C078209296C6C0C000D42B4 /* Contributions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C078208296C6C0C000D42B4 /* Contributions.swift */; };
 		1C1787502909248700BFEB6E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C17874F2909248700BFEB6E /* Settings.bundle */; };
 		1C1787542909291900BFEB6E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1787532909291900BFEB6E /* Assets.swift */; };
@@ -16,7 +17,7 @@
 		1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */; };
 		1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6694982822EA3A00ABFED2 /* Preview Assets.xcassets */; };
 		1C6694A32822EAD900ABFED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A22822EAD900ABFED2 /* ContentView.swift */; };
-		1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */; };
+		1C6694A62822EAFB00ABFED2 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A52822EAFB00ABFED2 /* AppViewModel.swift */; };
 		1C6694A92822EB4F00ABFED2 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694A82822EB4F00ABFED2 /* Array+.swift */; };
 		1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AA2822EB6600ABFED2 /* Color+.swift */; };
 		1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */; };
@@ -27,14 +28,15 @@
 		1C6694BD2822ECC500ABFED2 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6694BC2822ECC500ABFED2 /* SwiftSoup */; };
 		1C6694C22822EDC300ABFED2 /* Network+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6694C12822EDC300ABFED2 /* Network+.swift */; };
 		1C921BF22909399300BA091E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C921BF12909399300BA091E /* README.md */; };
-		1CA831B9290950D900FC6AB4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CA831B8290950D900FC6AB4 /* icon.icns */; };
-		1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* SettingsView.swift */; };
+		1CAFD6862823D81100C9A576 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD6852823D81100C9A576 /* PreferencesView.swift */; };
 		1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */; };
+		1CD3F2B329A4BED7002AE086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3F2B229A4BED7002AE086 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0715A629A4DAF9009E52A2 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		1C078204296C3D0D000D42B4 /* ThemaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemaColor.swift; sourceTree = "<group>"; };
-		1C078206296C6943000D42B4 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		1C078206296C6943000D42B4 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		1C078208296C6C0C000D42B4 /* Contributions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributions.swift; sourceTree = "<group>"; };
 		1C17874F2909248700BFEB6E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1C1787532909291900BFEB6E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubContributionsMenuBar.entitlements; sourceTree = "<group>"; };
 		1C6694A12822EAB700ABFED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C6694A22822EAD900ABFED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsViewModel.swift; sourceTree = "<group>"; };
+		1C6694A52822EAFB00ABFED2 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		1C6694A82822EB4F00ABFED2 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		1C6694AA2822EB6600ABFED2 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsView.swift; sourceTree = "<group>"; };
@@ -55,9 +57,9 @@
 		1C6694B92822ECA400ABFED2 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		1C6694C12822EDC300ABFED2 /* Network+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+.swift"; sourceTree = "<group>"; };
 		1C921BF12909399300BA091E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
-		1CA831B8290950D900FC6AB4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
-		1CAFD6852823D81100C9A576 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1CAFD6852823D81100C9A576 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelStyle.swift; sourceTree = "<group>"; };
+		1CD3F2B229A4BED7002AE086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				1C078204296C3D0D000D42B4 /* ThemaColor.swift */,
-				1C078206296C6943000D42B4 /* ViewType.swift */,
+				1C078206296C6943000D42B4 /* ViewState.swift */,
 				1C078208296C6C0C000D42B4 /* Contributions.swift */,
 			);
 			path = Entity;
@@ -97,7 +99,7 @@
 				1C17874F2909248700BFEB6E /* Settings.bundle */,
 				1C17875529092A3800BFEB6E /* Assets.xcassets */,
 				1C6694A12822EAB700ABFED2 /* Info.plist */,
-				1CA831B8290950D900FC6AB4 /* icon.icns */,
+				1C0715A629A4DAF9009E52A2 /* icon.icns */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -132,8 +134,8 @@
 				1C921BF12909399300BA091E /* README.md */,
 				1CBC3A2D296AE60E00E1EDB5 /* Application */,
 				1C6694A02822EA5800ABFED2 /* View */,
-				1C078202296C3C93000D42B4 /* Model */,
 				1C6694A42822EAED00ABFED2 /* ViewModel */,
+				1C078202296C3C93000D42B4 /* Model */,
 				1C17874D290922D200BFEB6E /* Generated */,
 				1C6694A72822EB3200ABFED2 /* Extension */,
 				1C17874C290921ED00BFEB6E /* Resource */,
@@ -155,7 +157,8 @@
 			children = (
 				1C6694A22822EAD900ABFED2 /* ContentView.swift */,
 				1CAFD6942824193200C9A576 /* Contributions */,
-				1CAFD689282411D700C9A576 /* Settings */,
+				1CAFD689282411D700C9A576 /* Preferences */,
+				1CD3F2B429A4C0B3002AE086 /* Common */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,7 +166,7 @@
 		1C6694A42822EAED00ABFED2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1C6694A52822EAFB00ABFED2 /* ContributionsViewModel.swift */,
+				1C6694A52822EAFB00ABFED2 /* AppViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,20 +191,18 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		1CAFD689282411D700C9A576 /* Settings */ = {
+		1CAFD689282411D700C9A576 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				1CAFD6852823D81100C9A576 /* SettingsView.swift */,
-				1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */,
+				1CAFD6852823D81100C9A576 /* PreferencesView.swift */,
 			);
-			path = Settings;
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		1CAFD6942824193200C9A576 /* Contributions */ = {
 			isa = PBXGroup;
 			children = (
 				1C6694AC2822EB9400ABFED2 /* ContributionsView.swift */,
-				1C6694AE2822EBC300ABFED2 /* GridStack.swift */,
 			);
 			path = Contributions;
 			sourceTree = "<group>";
@@ -211,8 +212,18 @@
 			children = (
 				1C66949A2822EA3A00ABFED2 /* GitHubContributionsMenuBar.entitlements */,
 				1C6694912822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift */,
+				1CD3F2B229A4BED7002AE086 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		1CD3F2B429A4C0B3002AE086 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1CAFD68A282412F400C9A576 /* SettingsLabelStyle.swift */,
+				1C6694AE2822EBC300ABFED2 /* GridStack.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0715A729A4DAF9009E52A2 /* icon.icns in Resources */,
 				1C921BF22909399300BA091E /* README.md in Resources */,
-				1CA831B9290950D900FC6AB4 /* icon.icns in Resources */,
 				1C1AF58E2915253B00576761 /* Assets.xcassets in Resources */,
 				1C6694992822EA3A00ABFED2 /* Preview Assets.xcassets in Resources */,
 				1C1787502909248700BFEB6E /* Settings.bundle in Resources */,
@@ -322,17 +333,18 @@
 				1C6694AD2822EB9400ABFED2 /* ContributionsView.swift in Sources */,
 				1CAFD68B282412F500C9A576 /* SettingsLabelStyle.swift in Sources */,
 				1C1787542909291900BFEB6E /* Assets.swift in Sources */,
-				1C6694A62822EAFB00ABFED2 /* ContributionsViewModel.swift in Sources */,
-				1CAFD6862823D81100C9A576 /* SettingsView.swift in Sources */,
+				1C6694A62822EAFB00ABFED2 /* AppViewModel.swift in Sources */,
+				1CAFD6862823D81100C9A576 /* PreferencesView.swift in Sources */,
 				1C6694BA2822ECA400ABFED2 /* GitHub.swift in Sources */,
 				1C6694922822EA3800ABFED2 /* GitHubContributionsMenuBarApp.swift in Sources */,
 				1C6694AF2822EBC300ABFED2 /* GridStack.swift in Sources */,
 				1C6694B82822EC8F00ABFED2 /* Contribution.swift in Sources */,
+				1CD3F2B329A4BED7002AE086 /* AppDelegate.swift in Sources */,
 				1C078209296C6C0C000D42B4 /* Contributions.swift in Sources */,
 				1C078205296C3D0D000D42B4 /* ThemaColor.swift in Sources */,
 				1C6694B52822EC2700ABFED2 /* View+.swift in Sources */,
 				1C6694AB2822EB6600ABFED2 /* Color+.swift in Sources */,
-				1C078207296C6943000D42B4 /* ViewType.swift in Sources */,
+				1C078207296C6943000D42B4 /* ViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +476,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 112;
+				CURRENT_PROJECT_VERSION = 113;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
@@ -473,7 +485,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubContributionsMenuBar/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contributions;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,7 +493,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -499,7 +511,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 112;
+				CURRENT_PROJECT_VERSION = 113;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubContributionsMenuBar/Preview Content\"";
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
@@ -508,7 +520,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubContributionsMenuBar/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contributions;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,7 +528,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GitHubContributionsMenuBar;
 				PRODUCT_NAME = Contributions;
 				SWIFT_EMIT_LOC_STRINGS = YES;

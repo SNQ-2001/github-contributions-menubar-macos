@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContributionsView: View {
-    @ObservedObject var viewModel: ContributionsViewModel
+    @ObservedObject var viewModel: AppViewModel
     var body: some View {
         GridStack(rows: 7, columns: 20, spacing: 3.0) { row, column in
             if let color = color().element(at: row)?.element(at: column) {

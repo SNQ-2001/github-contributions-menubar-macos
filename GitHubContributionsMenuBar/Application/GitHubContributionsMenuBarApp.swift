@@ -9,13 +9,20 @@ import SwiftUI
 
 @main
 struct GitHubContributionsMenuBarApp: App {
-    @StateObject var viewModel = ContributionsViewModel()
+    @StateObject var viewModel = AppViewModel()
+
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         MenuBarExtra {
-            ContentView(viewModel: viewModel)
+            ContentView(viewModel: viewModel, delegate: delegate)
         } label: {
             Image(nsImage: NSImage(named: Asset.menuBarIcon.name)!)
         }
         .menuBarExtraStyle(.window)
+
+        Settings {
+            PreferencesView(viewModel: viewModel)
+        }
     }
 }

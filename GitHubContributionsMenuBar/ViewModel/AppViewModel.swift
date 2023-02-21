@@ -1,5 +1,5 @@
 //
-//  ContributionsViewModel.swift
+//  AppViewModel.swift
 //  GitHubContributionsMenuBar
 //
 //  Created by 宮本大新 on 2022/05/05.
@@ -8,13 +8,17 @@
 import Combine
 import SwiftUI
 
-final class ContributionsViewModel: ObservableObject {
+final class AppViewModel: ObservableObject {
     @Published var contributions: Contributions = .init()
-    @Published var viewType: ViewType = .contributions
-    @Published var hoverSwitchingButton: Bool = false
+
+    @Published var viewState: ViewState = .success
+
+    @Published var hoverPreferencesButton: Bool = false
+
     @Published var hoverQuitButton: Bool = false
 
     @AppStorage("username") var username: String = ""
+
     @AppStorage("thema") var thema: ThemaColor = .init(rawValue: 0) ?? .green
 
     private let queue = DispatchQueue(label: "com.andergoig.GitHubContributions.network")
@@ -30,33 +34,33 @@ final class ContributionsViewModel: ObservableObject {
             .store(in: &cancellable)
     }
 
-    func getContributions() {
+    private func fetchContributions() {
         guard contributions.levels.isEmpty else { return }
-        withAnimation { self.viewType = .progress }
-        if username == "" { viewType = .emptyUserName; return }
-        GitHub.getContributions(for: username, queue: queue)
+        withAnimation { self.viewState = .inProgress }
+        if username == "" { viewState = .emptyUserName; return }
+        GitHub.fetchContributions(for: username, queue: queue)
             .subscribe(on: queue)
+            .retry(5)
             .map(Self.mapContributions)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 guard let self else { return }
                 switch completion {
-                case .finished:
-                    return
-                case let .failure(error):
-                    withAnimation { self.viewType = .error(error) }
+                case .finished: return
+                case .failure:
+                    self.viewState = .failure
                 }
             } receiveValue: { [weak self] contributions in
                 guard let self else { return }
                 self.contributions = contributions
-                withAnimation { self.viewType = .contributions }
+                self.viewState = .success
             }
             .store(in: &cancellable)
     }
 
     func updateContributions() {
         contributions = .init()
-        getContributions()
+        fetchContributions()
     }
 
     private static func mapContributions(_ contributions: [GitHub.Contribution]) -> Contributions {
